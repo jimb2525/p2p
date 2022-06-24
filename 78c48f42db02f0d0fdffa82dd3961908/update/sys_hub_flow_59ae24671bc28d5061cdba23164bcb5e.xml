@@ -43,6 +43,8 @@
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59ae24671bc28d5061cdba23164bcb5e"/>
     <sys_variable_value action="delete_multiple" query="document_key=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=59ae24671bc28d5061cdba23164bcb5e"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=59ae24671bc28d5061cdba23164bcb5e^sys_idNOT INd9aea4671bc28d5061cdba23164bcbaa"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>59ae24671bc28d5061cdba23164bcb5e</id>
@@ -55,4 +57,19 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-03-11 06:11:10</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d9aea4671bc28d5061cdba23164bcbaa"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59ae24671bc28d5061cdba23164bcb5e"/>
 </record_update>

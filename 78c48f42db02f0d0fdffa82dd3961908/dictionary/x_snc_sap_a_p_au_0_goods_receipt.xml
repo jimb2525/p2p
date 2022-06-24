@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Goods receipt" max_length="40" name="x_snc_sap_a_p_au_0_goods_receipt" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Transaction code for goods movement" max_length="40" name="goods_movement" type="string"/>
+        <element label="GR document no. in SAP" max_length="40" name="gr_document_no_in_sap" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Linked PO" max_length="32" name="linked_po" reference="x_snc_sap_a_p_au_0_purchase_order" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Posting date" max_length="40" name="posting_date" type="glide_date"/>
+    </element>
+</database>

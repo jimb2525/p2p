@@ -5,8 +5,12 @@
         <description/>
         <display_name>Purchasing</display_name>
         <language>en</language>
+        <last_translated_on/>
+        <model_domain/>
         <name>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</name>
-        <state>Published</state>
+        <oob>false</oob>
+        <primary_model/>
+        <state>Draft</state>
         <sys_class_name>sys_nlu_model</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-31 07:46:06</sys_created_on>
@@ -21,5 +25,6 @@
         <sys_update_name>sys_nlu_model_b313d0f1db52fc10fdffa82dd3961960</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 07:46:06</sys_updated_on>
+        <vocabulary_needs_review>false</vocabulary_needs_review>
     </sys_nlu_model>
 </record_update>

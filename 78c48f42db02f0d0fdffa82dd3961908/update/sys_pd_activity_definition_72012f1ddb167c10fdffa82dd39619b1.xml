@@ -30,4 +30,5 @@
         <wait_for_completion>true</wait_for_completion>
     </sys_pd_activity_definition>
     <sys_variable_value action="delete_multiple" query="document_key=72012f1ddb167c10fdffa82dd39619b1"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_b869bfdcdb9ef410fdffa82dd396192f^id=72012f1ddb167c10fdffa82dd39619b1"/>
 </record_update>

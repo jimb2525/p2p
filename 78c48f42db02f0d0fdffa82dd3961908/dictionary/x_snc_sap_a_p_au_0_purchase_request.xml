@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Purchase request" max_length="40" name="x_snc_sap_a_p_au_0_purchase_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Item name" max_length="40" name="item_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;&#9;var total_amount = parseFloat(current.unit_price).toFixed(2) * parseFloat(current.quantity).toFixed(2);&#10;&#9;&#9;return total_amount.toFixed(2);  // return the calculated value&#10;&#10;})(current);" label="Total amount" max_length="40" name="total_amount" read_only="true" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Unit price" max_length="20" name="unit_price" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Vendor contract" max_length="32" name="vendor_contract" reference="ast_contract" type="reference"/>
+    </element>
+</database>

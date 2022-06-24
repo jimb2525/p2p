@@ -5,6 +5,7 @@
         <columns>number,priority,state,assigned_to,short_description,sys_class_name</columns>
         <condition/>
         <configuration display_value="A/P Automation Workspace_menu_config">7a017183db823010fdffa82dd396193b</configuration>
+        <group_by_column/>
         <groups/>
         <list_attributes/>
         <order>50</order>

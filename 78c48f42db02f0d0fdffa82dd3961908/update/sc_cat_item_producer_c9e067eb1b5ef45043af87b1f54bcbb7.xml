@@ -7,7 +7,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category display_value="Account Payable">304b1fda1b4a2010366b1f49274bcb3d</category>
+        <category display_value="">304b1fda1b4a2010366b1f49274bcb3d</category>
         <checked_out>false</checked_out>
         <cost>0</cost>
         <create_universal_request>false</create_universal_request>
@@ -46,7 +46,7 @@
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
-        <owner display_value="Shao Wei Tan">6816f79cc0a8016401c5a33be04be441</owner>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <picture/>
         <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c9e067eb1b5ef45043af87b1f54bcbb7&amp;sysparm_preview=true", "summary");</preview>
@@ -79,6 +79,7 @@
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2021-09-06 09:17:03</sys_updated_on>
         <table_name>x_snc_sap_a_p_au_0_vendor_update</table_name>
+        <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>

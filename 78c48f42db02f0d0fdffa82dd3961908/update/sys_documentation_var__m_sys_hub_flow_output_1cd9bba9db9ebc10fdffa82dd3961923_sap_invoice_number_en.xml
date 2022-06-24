@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sap_invoice_number" label="SAP invoice number" language="en" table="var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sap_invoice_number</element>
+            <help/>
+            <hint/>
+            <label>SAP invoice number</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+            <sys_id>18d9bba9db9ebc10fdffa82dd3961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>SAP invoice number</sys_name>
+            <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923_sap_invoice_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

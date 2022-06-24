@@ -2,11 +2,12 @@
     <sys_cb_topic action="INSERT_OR_UPDATE">
         <applicability/>
         <applicability_mode>query</applicability_mode>
-        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
         <category/>
         <channels/>
         <connect_queue/>
         <description/>
+        <expose_on_palette>false</expose_on_palette>
         <flexible_conversation_switching>false</flexible_conversation_switching>
         <graph>{
   "graph_api_version": "1.0.31",
@@ -148,6 +149,7 @@
         <nlu_model/>
         <nlu_model_label/>
         <nlu_provider/>
+        <palette_label/>
         <roles/>
         <source_topic_id/>
         <sys_class_name>sys_cb_topic</sys_class_name>

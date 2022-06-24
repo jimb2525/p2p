@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Invoice" max_length="40" name="x_snc_sap_a_p_au_0_invoice" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Gross invoice amount" max_length="20" name="gross_invoice_amount" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice date" max_length="40" name="invoice_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice number" max_length="40" name="invoice_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Linked PO" max_length="32" name="linked_po" reference="x_snc_sap_a_p_au_0_purchase_order" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="SAP invoice number" max_length="40" name="sap_invoice" type="string"/>
+    </element>
+</database>

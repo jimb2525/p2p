@@ -29,19 +29,22 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d0b37d0dbdef410fdffa82dd3961931</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Lookup payments SAP</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
         <sys_update_name>sys_hub_flow_7d0b37d0dbdef410fdffa82dd3961931</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:16</sys_updated_on>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 18:27:48</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_variable_value action="delete_multiple" query="document_key=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931^id=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN710b37d0dbdef410fdffa82dd3961933"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>7d0b37d0dbdef410fdffa82dd3961931</id>
@@ -54,6 +57,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:48:25</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=710b37d0dbdef410fdffa82dd3961933"/>
     <sys_hub_flow_input action="delete_multiple" query="model=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN72ddb361dbdebc10fdffa82dd396192c,baddb361dbdebc10fdffa82dd3961933"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -461,11 +465,11 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INf0abf314dbdef410fdffa82dd39619fe"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Payments">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
+        <action_type display_value="">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot/>
@@ -496,7 +500,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
         <value>1000</value>
-        <variable display_value="Company Code">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
+        <variable display_value="">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -510,7 +514,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
         <value/>
-        <variable display_value="Key date">328350c9db11a41072af56a4dc9619d2</variable>
+        <variable display_value="">328350c9db11a41072af56a4dc9619d2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -524,7 +528,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
         <value>{"children":[{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"CODE","label":"Message code","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"}],"name":"RETURN","label":"Return Code [ RETURN ]","type":"object"},{"children":[{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SP_GL_IND","label":"Special G/L ind","type":"string"},{"name":"CLEAR_DATE","label":"Clearing date","type":"date"},{"name":"CLR_DOC_NO","label":"Clearing Document","type":"string"},{"name":"ALLOC_NMBR","label":"Assignment","type":"string"},{"name":"FISC_YEAR","label":"Fiscal Year","type":"string"},{"name":"DOC_NO","label":"Document Number","type":"string"},{"name":"ITEM_NUM","label":"Line item [ ITEM_NUM ]","type":"string"},{"name":"PSTNG_DATE","label":"Posting Date","type":"date"},{"name":"DOC_DATE","label":"Document Date","type":"date"},{"name":"ENTRY_DATE","label":"Entry Date","type":"date"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"LOC_CURRCY","label":"Local Currency","type":"string"},{"name":"REF_DOC_NO","label":"Reference [ REF_DOC_NO ]","type":"string"},{"name":"DOC_TYPE","label":"Document type","type":"string"},{"name":"FIS_PERIOD","label":"Posting period","type":"string"},{"name":"POST_KEY","label":"Posting Key","type":"string"},{"name":"DB_CR_IND","label":"Debit/Credit ind","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"TAX_CODE","label":"Tax code [ TAX_CODE ]","type":"string"},{"name":"LC_AMOUNT","label":"Amount in LC","type":"string"},{"name":"AMT_DOCCUR","label":"Amount [ AMT_DOCCUR ]","type":"string"},{"name":"LC_TAX","label":"LC tax amount","type":"string"},{"name":"TX_DOC_CUR","label":"Tax amount","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"BRANCH","label":"Branch account","type":"string"},{"name":"BLINE_DATE","label":"Baseline payment dte","type":"date"},{"name":"PMNTTRMS","label":"Payment terms","type":"string"},{"name":"DSCT_DAYS1","label":"Days 1","type":"string"},{"name":"DSCT_DAYS2","label":"Days 2","type":"string"},{"name":"NETTERMS","label":"Days net","type":"string"},{"name":"DSCT_PCT1","label":"Disc percent 1","type":"string"},{"name":"DSCT_PCT2","label":"Disc percent 2","type":"string"},{"name":"DISC_BASE","label":"Discount base","type":"string"},{"name":"DSC_AMT_LC","label":"Cash discount amount","type":"string"},{"name":"DSC_AMT_DC","label":"Discount amount","type":"string"},{"name":"PYMT_METH","label":"Payment Method","type":"string"},{"name":"PMNT_BLOCK","label":"Payment block","type":"string"},{"name":"FIXEDTERMS","label":"Fixed","type":"string"},{"name":"INV_REF","label":"Invoice reference","type":"string"},{"name":"INV_YEAR","label":"Fiscal year","type":"string"},{"name":"INV_ITEM","label":"Line item [ INV_ITEM ]","type":"string"},{"name":"DUNN_BLOCK","label":"Dunning Block","type":"string"},{"name":"DUNN_KEY","label":"Dunning Key","type":"string"},{"name":"LAST_DUNN","label":"Last Dunned","type":"date"},{"name":"DUNN_LEVEL","label":"Dunning Level","type":"string"},{"name":"DUNN_AREA","label":"Dunning Area","type":"string"},{"name":"DOC_STATUS","label":"Doc status","type":"string"},{"name":"NXT_DOCTYP","label":"Follow-on doc type","type":"string"},{"name":"VAT_REG_NO","label":"VAT Registration No","type":"string"},{"name":"REASON_CDE","label":"Reason code","type":"string"},{"name":"PMTMTHSUPL","label":"Pmt meth supplement","type":"string"},{"name":"REF_KEY_1","label":"Reference Key 1","type":"string"},{"name":"REF_KEY_2","label":"Reference Key 2","type":"string"},{"name":"T_CURRENCY","label":"General ledger currency","type":"string"},{"name":"AMOUNT","label":"Amount [ AMOUNT ]","type":"string"},{"name":"NET_AMOUNT","label":"Payment amount","type":"string"},{"name":"NAME","label":"Name","type":"string"},{"name":"NAME_2","label":"Name 2","type":"string"},{"name":"NAME_3","label":"Name 3","type":"string"},{"name":"NAME_4","label":"Name 4","type":"string"},{"name":"POSTL_CODE","label":"Postal Code","type":"string"},{"name":"CITY","label":"City","type":"string"},{"name":"COUNTRY","label":"Country","type":"string"},{"name":"STREET","label":"Street","type":"string"},{"name":"PO_BOX","label":"PO Box","type":"string"},{"name":"POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"POBK_CURAC","label":"Post bank acct no","type":"string"},{"name":"BANK_ACCT","label":"Bank Account","type":"string"},{"name":"BANK_KEY","label":"Bank Key","type":"string"},{"name":"BANK_CTRY","label":"Bank Country","type":"string"},{"name":"TAX_NO_1","label":"Tax Number 1","type":"string"},{"name":"TAX_NO_2","label":"Tax Number 2","type":"string"},{"name":"TAX","label":"Liable for VAT","type":"string"},{"name":"EQUAL_TAX","label":"Sales equalizatn tax","type":"string"},{"name":"REGION","label":"Region","type":"string"},{"name":"CTRL_KEY","label":"Bank control key","type":"string"},{"name":"INSTR_KEY","label":"Instruction key","type":"string"},{"name":"PAYEE_CODE","label":"Payment recipient","type":"string"},{"name":"LANGU","label":"Language Key","type":"string"},{"name":"BILL_LIFE","label":"Bill of exch life","type":"string"},{"name":"BE_TAXCODE","label":"B/exch tax code","type":"string"},{"name":"BILLTAX_LC","label":"Bill/exchange tax LC","type":"string"},{"name":"BILLTAX_FC","label":"Bill of exchange tax","type":"string"},{"name":"LC_COL_CHG","label":"LC collection charge","type":"string"},{"name":"COLL_CHARG","label":"Collection charge","type":"string"},{"name":"CHGS_TX_CD","label":"Tax code [ CHGS_TX_CD ]","type":"string"},{"name":"ISSUE_DATE","label":"Issue date","type":"date"},{"name":"USAGEDATE","label":"Used on","type":"date"},{"name":"BILL_USAGE","label":"Planned usage","type":"string"},{"name":"DOMICILE","label":"Domicile","type":"string"},{"name":"DRAWER","label":"Drawer","type":"string"},{"name":"CTRBNK_LOC","label":"Cen bank loc","type":"string"},{"name":"DRAW_CITY1","label":"City of bill of exch drawer","type":"string"},{"name":"DRAWEE","label":"Drawee","type":"string"},{"name":"DRAW_CITY2","label":"City of b/exch drawee","type":"string"},{"name":"DISCT_DAYS","label":"Discount days","type":"string"},{"name":"DISCT_RATE","label":"Discnt rate","type":"string"},{"name":"ACCEPTED","label":"Bill of exch accepted","type":"string"},{"name":"BILLSTATUS","label":"Bill/exch status","type":"string"},{"name":"PRTEST_IND","label":"Bill protest ID","type":"string"},{"name":"BE_DEMAND","label":"Bill on demand","type":"string"},{"name":"OBJ_TYPE","label":"Reference procedure","type":"string"},{"name":"REF_DOC","label":"Reference document","type":"string"},{"name":"REF_ORG_UN","label":"Reference org unit","type":"string"},{"name":"REVERSAL_DOC","label":"Reversed with","type":"string"},{"name":"SP_GL_TYPE","label":"Sp G/L trans type","type":"string"},{"name":"NEG_POSTNG","label":"Negative posting","type":"string"},{"name":"REF_DOC_NO_LONG","label":"Reference [ REF_DOC_NO_LONG ]","type":"string"},{"name":"BILL_DOC","label":"Billing Document","type":"string"}],"name":"LINEITEMS","attributes":{"child_type":"object"},"label":"Line items [ LINEITEMS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}}</value>
-        <variable display_value="Pending Payments">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
+        <variable display_value="">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -538,69 +542,14 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
         <value>d0578871dbad8010ea4494d9db9619d9</value>
-        <variable display_value="Connection Alias">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
+        <variable display_value="">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=f0abf314dbdef410fdffa82dd39619fe"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>COMPANYCODE</field>
-        <id>f0abf314dbdef410fdffa82dd39619fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
-        <sys_id>c7ddb361dbdebc10fdffa82dd3961957</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conn_alias</field>
-        <id>f0abf314dbdef410fdffa82dd39619fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
-        <sys_id>b0ab3714dbdef410fdffa82dd3961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>CUSTOMER</field>
-        <id>f0abf314dbdef410fdffa82dd39619fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
-        <sys_id>8fddb361dbdebc10fdffa82dd3961957</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value>{{subflow.vendor.name}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>dynamic_hidden_input_response</field>
-        <id>f0abf314dbdef410fdffa82dd39619fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
-        <sys_id>74ab3714dbdef410fdffa82dd3961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>KEYDATE</field>
-        <id>f0abf314dbdef410fdffa82dd39619fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
-        <sys_id>43ddb361dbdebc10fdffa82dd3961958</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value>{{subflow.date}}</value>
-    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f0abf314dbdef410fdffa82dd39619fe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f0abf314dbdef410fdffa82dd39619fe"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INc7ddb361dbdebc10fdffa82dd396193d,f2ddb361dbdebc10fdffa82dd3961932"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>vendor</element>
@@ -615,11 +564,11 @@
         <sys_created_on>2021-08-31 06:13:12</sys_created_on>
         <sys_id>c7ddb361dbdebc10fdffa82dd396193d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>vendor</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931_vendor_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
         <url/>
@@ -638,16 +587,17 @@
         <sys_created_on>2021-08-31 06:13:12</sys_created_on>
         <sys_id>f2ddb361dbdebc10fdffa82dd3961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>date</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN30abf314dbdef410fdffa82dd39619ce,7cabf314dbdef410fdffa82dd39619ac,b8abf314dbdef410fdffa82dd39619c3"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sap_payment_date</element>
@@ -662,11 +612,11 @@
         <sys_created_on>2021-08-27 08:51:05</sys_created_on>
         <sys_id>30abf314dbdef410fdffa82dd39619ce</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment date</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931_sap_payment_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
         <url/>
@@ -685,11 +635,11 @@
         <sys_created_on>2021-08-27 08:51:05</sys_created_on>
         <sys_id>7cabf314dbdef410fdffa82dd39619ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment number</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931_sap_payment_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
         <url/>
@@ -708,16 +658,18 @@
         <sys_created_on>2021-08-27 08:51:05</sys_created_on>
         <sys_id>b8abf314dbdef410fdffa82dd39619c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment amount</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931_sap_payment_amount_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7d0b37d0dbdef410fdffa82dd3961931"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INf7ddf361dbdebc10fdffa82dd39619c1"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>com.snc.process_flow.engine.ProcessPlan@1192b3e</plan>
@@ -775,6 +727,9 @@
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_variable_value action="delete_multiple" query="document_key=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2^id=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN9bddb361dbdebc10fdffa82dd39619c3"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>97ddb361dbdebc10fdffa82dd39619c2</id>
@@ -787,6 +742,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9bddb361dbdebc10fdffa82dd39619c3"/>
     <sys_hub_flow_input action="delete_multiple" query="model=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN5fddb361dbdebc10fdffa82dd39619c4,d3ddb361dbdebc10fdffa82dd39619e7"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1194,12 +1150,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN27ddf361dbdebc10fdffa82dd396195a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Payments">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
-        <action_type_parent display_value="Look Up Payments">f6b831541bd16c10d2cf7669cc4bcb96</action_type_parent>
+        <action_type display_value="">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
+        <action_type_parent display_value="">f6b831541bd16c10d2cf7669cc4bcb96</action_type_parent>
         <comment/>
         <compiled_snapshot>706fb5d81bd16c10d2cf7669cc4bcb2b</compiled_snapshot>
         <display_text/>
@@ -1229,7 +1185,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
         <value>{"children":[{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"CODE","label":"Message code","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"}],"name":"RETURN","label":"Return Code [ RETURN ]","type":"object"},{"children":[{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SP_GL_IND","label":"Special G/L ind","type":"string"},{"name":"CLEAR_DATE","label":"Clearing date","type":"date"},{"name":"CLR_DOC_NO","label":"Clearing Document","type":"string"},{"name":"ALLOC_NMBR","label":"Assignment","type":"string"},{"name":"FISC_YEAR","label":"Fiscal Year","type":"string"},{"name":"DOC_NO","label":"Document Number","type":"string"},{"name":"ITEM_NUM","label":"Line item [ ITEM_NUM ]","type":"string"},{"name":"PSTNG_DATE","label":"Posting Date","type":"date"},{"name":"DOC_DATE","label":"Document Date","type":"date"},{"name":"ENTRY_DATE","label":"Entry Date","type":"date"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"LOC_CURRCY","label":"Local Currency","type":"string"},{"name":"REF_DOC_NO","label":"Reference [ REF_DOC_NO ]","type":"string"},{"name":"DOC_TYPE","label":"Document type","type":"string"},{"name":"FIS_PERIOD","label":"Posting period","type":"string"},{"name":"POST_KEY","label":"Posting Key","type":"string"},{"name":"DB_CR_IND","label":"Debit/Credit ind","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"TAX_CODE","label":"Tax code [ TAX_CODE ]","type":"string"},{"name":"LC_AMOUNT","label":"Amount in LC","type":"string"},{"name":"AMT_DOCCUR","label":"Amount [ AMT_DOCCUR ]","type":"string"},{"name":"LC_TAX","label":"LC tax amount","type":"string"},{"name":"TX_DOC_CUR","label":"Tax amount","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"BRANCH","label":"Branch account","type":"string"},{"name":"BLINE_DATE","label":"Baseline payment dte","type":"date"},{"name":"PMNTTRMS","label":"Payment terms","type":"string"},{"name":"DSCT_DAYS1","label":"Days 1","type":"string"},{"name":"DSCT_DAYS2","label":"Days 2","type":"string"},{"name":"NETTERMS","label":"Days net","type":"string"},{"name":"DSCT_PCT1","label":"Disc percent 1","type":"string"},{"name":"DSCT_PCT2","label":"Disc percent 2","type":"string"},{"name":"DISC_BASE","label":"Discount base","type":"string"},{"name":"DSC_AMT_LC","label":"Cash discount amount","type":"string"},{"name":"DSC_AMT_DC","label":"Discount amount","type":"string"},{"name":"PYMT_METH","label":"Payment Method","type":"string"},{"name":"PMNT_BLOCK","label":"Payment block","type":"string"},{"name":"FIXEDTERMS","label":"Fixed","type":"string"},{"name":"INV_REF","label":"Invoice reference","type":"string"},{"name":"INV_YEAR","label":"Fiscal year","type":"string"},{"name":"INV_ITEM","label":"Line item [ INV_ITEM ]","type":"string"},{"name":"DUNN_BLOCK","label":"Dunning Block","type":"string"},{"name":"DUNN_KEY","label":"Dunning Key","type":"string"},{"name":"LAST_DUNN","label":"Last Dunned","type":"date"},{"name":"DUNN_LEVEL","label":"Dunning Level","type":"string"},{"name":"DUNN_AREA","label":"Dunning Area","type":"string"},{"name":"DOC_STATUS","label":"Doc status","type":"string"},{"name":"NXT_DOCTYP","label":"Follow-on doc type","type":"string"},{"name":"VAT_REG_NO","label":"VAT Registration No","type":"string"},{"name":"REASON_CDE","label":"Reason code","type":"string"},{"name":"PMTMTHSUPL","label":"Pmt meth supplement","type":"string"},{"name":"REF_KEY_1","label":"Reference Key 1","type":"string"},{"name":"REF_KEY_2","label":"Reference Key 2","type":"string"},{"name":"T_CURRENCY","label":"General ledger currency","type":"string"},{"name":"AMOUNT","label":"Amount [ AMOUNT ]","type":"string"},{"name":"NET_AMOUNT","label":"Payment amount","type":"string"},{"name":"NAME","label":"Name","type":"string"},{"name":"NAME_2","label":"Name 2","type":"string"},{"name":"NAME_3","label":"Name 3","type":"string"},{"name":"NAME_4","label":"Name 4","type":"string"},{"name":"POSTL_CODE","label":"Postal Code","type":"string"},{"name":"CITY","label":"City","type":"string"},{"name":"COUNTRY","label":"Country","type":"string"},{"name":"STREET","label":"Street","type":"string"},{"name":"PO_BOX","label":"PO Box","type":"string"},{"name":"POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"POBK_CURAC","label":"Post bank acct no","type":"string"},{"name":"BANK_ACCT","label":"Bank Account","type":"string"},{"name":"BANK_KEY","label":"Bank Key","type":"string"},{"name":"BANK_CTRY","label":"Bank Country","type":"string"},{"name":"TAX_NO_1","label":"Tax Number 1","type":"string"},{"name":"TAX_NO_2","label":"Tax Number 2","type":"string"},{"name":"TAX","label":"Liable for VAT","type":"string"},{"name":"EQUAL_TAX","label":"Sales equalizatn tax","type":"string"},{"name":"REGION","label":"Region","type":"string"},{"name":"CTRL_KEY","label":"Bank control key","type":"string"},{"name":"INSTR_KEY","label":"Instruction key","type":"string"},{"name":"PAYEE_CODE","label":"Payment recipient","type":"string"},{"name":"LANGU","label":"Language Key","type":"string"},{"name":"BILL_LIFE","label":"Bill of exch life","type":"string"},{"name":"BE_TAXCODE","label":"B/exch tax code","type":"string"},{"name":"BILLTAX_LC","label":"Bill/exchange tax LC","type":"string"},{"name":"BILLTAX_FC","label":"Bill of exchange tax","type":"string"},{"name":"LC_COL_CHG","label":"LC collection charge","type":"string"},{"name":"COLL_CHARG","label":"Collection charge","type":"string"},{"name":"CHGS_TX_CD","label":"Tax code [ CHGS_TX_CD ]","type":"string"},{"name":"ISSUE_DATE","label":"Issue date","type":"date"},{"name":"USAGEDATE","label":"Used on","type":"date"},{"name":"BILL_USAGE","label":"Planned usage","type":"string"},{"name":"DOMICILE","label":"Domicile","type":"string"},{"name":"DRAWER","label":"Drawer","type":"string"},{"name":"CTRBNK_LOC","label":"Cen bank loc","type":"string"},{"name":"DRAW_CITY1","label":"City of bill of exch drawer","type":"string"},{"name":"DRAWEE","label":"Drawee","type":"string"},{"name":"DRAW_CITY2","label":"City of b/exch drawee","type":"string"},{"name":"DISCT_DAYS","label":"Discount days","type":"string"},{"name":"DISCT_RATE","label":"Discnt rate","type":"string"},{"name":"ACCEPTED","label":"Bill of exch accepted","type":"string"},{"name":"BILLSTATUS","label":"Bill/exch status","type":"string"},{"name":"PRTEST_IND","label":"Bill protest ID","type":"string"},{"name":"BE_DEMAND","label":"Bill on demand","type":"string"},{"name":"OBJ_TYPE","label":"Reference procedure","type":"string"},{"name":"REF_DOC","label":"Reference document","type":"string"},{"name":"REF_ORG_UN","label":"Reference org unit","type":"string"},{"name":"REVERSAL_DOC","label":"Reversed with","type":"string"},{"name":"SP_GL_TYPE","label":"Sp G/L trans type","type":"string"},{"name":"NEG_POSTNG","label":"Negative posting","type":"string"},{"name":"REF_DOC_NO_LONG","label":"Reference [ REF_DOC_NO_LONG ]","type":"string"},{"name":"BILL_DOC","label":"Billing Document","type":"string"}],"name":"LINEITEMS","attributes":{"child_type":"object"},"label":"Line items [ LINEITEMS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}}</value>
-        <variable display_value="Pending Payments">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
+        <variable display_value="">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -1243,7 +1199,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
         <value/>
-        <variable display_value="Key date">328350c9db11a41072af56a4dc9619d2</variable>
+        <variable display_value="">328350c9db11a41072af56a4dc9619d2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -1257,7 +1213,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
         <value>d0578871dbad8010ea4494d9db9619d9</value>
-        <variable display_value="Connection Alias">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
+        <variable display_value="">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -1271,69 +1227,14 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
         <value>1000</value>
-        <variable display_value="Company Code">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
+        <variable display_value="">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=27ddf361dbdebc10fdffa82dd396195a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>COMPANYCODE</field>
-        <id>27ddf361dbdebc10fdffa82dd396195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
-        <sys_id>63ddf361dbdebc10fdffa82dd396195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conn_alias</field>
-        <id>27ddf361dbdebc10fdffa82dd396195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
-        <sys_id>e7ddf361dbdebc10fdffa82dd396195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>CUSTOMER</field>
-        <id>27ddf361dbdebc10fdffa82dd396195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
-        <sys_id>27ddf361dbdebc10fdffa82dd396195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value>{{subflow.vendor.name}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>dynamic_hidden_input_response</field>
-        <id>27ddf361dbdebc10fdffa82dd396195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
-        <sys_id>6fddf361dbdebc10fdffa82dd396195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>KEYDATE</field>
-        <id>27ddf361dbdebc10fdffa82dd396195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
-        <sys_id>abddf361dbdebc10fdffa82dd396195c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
-        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
-        <value>{{subflow.date}}</value>
-    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=27ddf361dbdebc10fdffa82dd396195a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=27ddf361dbdebc10fdffa82dd396195a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN5fddb361dbdebc10fdffa82dd39619e2,9bddb361dbdebc10fdffa82dd39619f4"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>date</element>
@@ -1348,11 +1249,11 @@
         <sys_created_on>2021-08-31 06:13:13</sys_created_on>
         <sys_id>5fddb361dbdebc10fdffa82dd39619e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>date</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
         <url/>
@@ -1371,16 +1272,17 @@
         <sys_created_on>2021-08-31 06:13:14</sys_created_on>
         <sys_id>9bddb361dbdebc10fdffa82dd39619f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>vendor</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2_vendor_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN63ddf361dbdebc10fdffa82dd396192d,e3ddf361dbdebc10fdffa82dd396191b,e7ddf361dbdebc10fdffa82dd3961909"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sap_payment_date</element>
@@ -1395,11 +1297,11 @@
         <sys_created_on>2021-08-31 06:13:14</sys_created_on>
         <sys_id>63ddf361dbdebc10fdffa82dd396192d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment date</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2_sap_payment_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
         <url/>
@@ -1418,11 +1320,11 @@
         <sys_created_on>2021-08-31 06:13:14</sys_created_on>
         <sys_id>e3ddf361dbdebc10fdffa82dd396191b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment amount</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2_sap_payment_amount_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
         <url/>
@@ -1441,16 +1343,17 @@
         <sys_created_on>2021-08-31 06:13:14</sys_created_on>
         <sys_id>e7ddf361dbdebc10fdffa82dd3961909</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP payment number</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2_sap_payment_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2"/>
     <sys_hub_flow action="update">
         <sys_id>7d0b37d0dbdef410fdffa82dd3961931</sys_id>
         <latest_snapshot>97ddb361dbdebc10fdffa82dd39619c2</latest_snapshot>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Vendor Update" max_length="40" name="x_snc_sap_a_p_au_0_vendor_update" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country" max_length="40" name="country" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Postal code" max_length="40" name="postal_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Vendor" max_length="32" name="vendor" reference="sn_sap_ariba_spoke_import_supplier_organizations_csv" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor name" max_length="40" name="vendor_name" type="string"/>
+    </element>
+</database>

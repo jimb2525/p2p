@@ -22,6 +22,7 @@
         <redirect_url>https://swt3demo.service-now.com/oauth_redirect.do</redirect_url>
         <refresh_token_lifespan>8640000</refresh_token_lifespan>
         <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
         <revoke_token_url/>
         <salt>0</salt>
         <send_client_credentials_as>request_body_parameter</send_client_credentials_as>

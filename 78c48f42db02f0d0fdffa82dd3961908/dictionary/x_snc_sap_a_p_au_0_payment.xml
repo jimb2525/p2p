@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Payment" max_length="40" name="x_snc_sap_a_p_au_0_payment" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Linked PO" max_length="32" name="linked_po" reference="x_snc_sap_a_p_au_0_purchase_order" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Payment document number" max_length="40" name="payment_doc_num" type="string"/>
+    </element>
+</database>

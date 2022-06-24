@@ -2,10 +2,13 @@
     <sys_nlu_intent action="INSERT_OR_UPDATE">
         <confidence_threshold>0.6</confidence_threshold>
         <description/>
+        <enable>false</enable>
         <model display_value="Purchasing">b313d0f1db52fc10fdffa82dd3961960</model>
         <name>Raise a PR</name>
         <origin/>
         <override_confidence_threshold>false</override_confidence_threshold>
+        <primary_intent/>
+        <status/>
         <sys_class_name>sys_nlu_intent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-31 07:46:17</sys_created_on>

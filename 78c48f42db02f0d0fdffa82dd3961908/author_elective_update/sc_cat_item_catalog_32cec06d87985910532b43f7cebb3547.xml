@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Raise a purchase request">48367a00db8b3050fdffa82dd39619c2</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 19:05:27</sys_created_on>
+        <sys_id>32cec06d87985910532b43f7cebb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_32cec06d87985910532b43f7cebb3547</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 19:05:27</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</application>
+        <file_path/>
+        <instance_id>e3dd915bdbeef0100ae3ac44d4961951</instance_id>
+        <instance_name>jbelote14demo</instance_name>
+        <name>sc_cat_item_catalog_32cec06d87985910532b43f7cebb3547</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Raise a purchase request">48367a00db8b3050fdffa82dd39619c2</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2022-06-24 19:05:27</sys_created_on><sys_id>32cec06d87985910532b43f7cebb3547</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Raise a purchase request</sys_name><sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package><sys_policy/><sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope><sys_update_name>sc_cat_item_catalog_32cec06d87985910532b43f7cebb3547</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2022-06-24 19:05:27</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1468967814</payload_hash>
+        <record_name>Service Catalog.Raise a purchase request</record_name>
+        <reverted_from/>
+        <source>dd47c0ad87585910532b43f7cebb35d8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 19:05:27</sys_created_on>
+        <sys_id>3ecec06d87985910532b43f7cebb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181971ad61d0000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 19:05:27</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>72cec06d12985910998dd786d580b249</update_guid>
+        <update_guid_history>72cec06d12985910998dd786d580b249:-1468967814</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Raise a purchase request">6bcec06d87985910532b43f7cebb35e9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 19:05:30</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>09ec66c158ff4c98be5ce2f753d66310</sys_id>
+        <sys_metadata>32cec06d87985910532b43f7cebb3547</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_parent display_value="">48367a00db8b3050fdffa82dd39619c2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_scope_delete display_value="">393384065fb944b889a42fc77a1b4f10</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_32cec06d87985910532b43f7cebb3547</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_32cec06d87985910532b43f7cebb3547">3ecec06d87985910532b43f7cebb3549</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 19:05:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

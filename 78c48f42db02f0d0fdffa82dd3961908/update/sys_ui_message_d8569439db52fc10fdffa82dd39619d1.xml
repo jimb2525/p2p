@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
     <sys_ui_message action="INSERT_OR_UPDATE">
         <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
         <key>You are raising a purchase request for {0} {1} at a unit price of ${2}. Kindly confirm and the request will be created.</key>
         <language>en</language>
         <message>You are raising a purchase request for {0} {1} at a unit price of ${2}. Kindly confirm and the request will be created.</message>

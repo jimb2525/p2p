@@ -16,7 +16,7 @@
         <sys_update_name>sys_push_notif_app_install_61edb2aa1bf1051061cdba23164bcbf9</sys_update_name>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2022-03-15 10:30:57</sys_updated_on>
-        <sys_user_id display_value="Carmen Man">97c9082d1ba9095043af87b1f54bcb21</sys_user_id>
+        <sys_user_id display_value="">97c9082d1ba9095043af87b1f54bcb21</sys_user_id>
         <token>FAD0ADF16ECAAB56B0107D7668B8D679EAA674C843B5418845F322481A24E4B4</token>
     </sys_push_notif_app_install>
 </record_update>

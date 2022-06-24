@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Request vendor update">c9e067eb1b5ef45043af87b1f54bcbb7</sc_cat_item>
-        <sc_category display_value="Account Payable">304b1fda1b4a2010366b1f49274bcb3d</sc_category>
+        <sc_category display_value="">304b1fda1b4a2010366b1f49274bcb3d</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-06 09:14:30</sys_created_on>

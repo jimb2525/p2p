@@ -2,10 +2,13 @@
     <sys_nlu_intent action="INSERT_OR_UPDATE">
         <confidence_threshold>0.6</confidence_threshold>
         <description/>
+        <enable>false</enable>
         <model display_value="Purchasing">b313d0f1db52fc10fdffa82dd3961960</model>
         <name>Change vendor details</name>
         <origin/>
         <override_confidence_threshold>false</override_confidence_threshold>
+        <primary_intent/>
+        <status/>
         <sys_class_name>sys_nlu_intent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 08:37:52</sys_created_on>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Raise a purchase request">99f8c471db12fc10fdffa82dd39619de</sc_cat_item>
+        <sc_category display_value="Account Payable">304b1fda1b4a2010366b1f49274bcb3d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:03:18</sys_created_on>
+        <sys_id>b85984b1db12fc10fdffa82dd3961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Account Payable.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sc_cat_item_category_b85984b1db12fc10fdffa82dd3961931</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 07:03:18</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</application>
+        <file_path/>
+        <instance_id>e3dd915bdbeef0100ae3ac44d4961951</instance_id>
+        <instance_name>jbelote14demo</instance_name>
+        <name>sc_cat_item_category_b85984b1db12fc10fdffa82dd3961931</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Raise a purchase request">99f8c471db12fc10fdffa82dd39619de</sc_cat_item><sc_category display_value="Account Payable">304b1fda1b4a2010366b1f49274bcb3d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-31 07:03:18</sys_created_on><sys_id>b85984b1db12fc10fdffa82dd3961931</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Account Payable.Raise a purchase request</sys_name><sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package><sys_policy/><sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope><sys_update_name>sc_cat_item_category_b85984b1db12fc10fdffa82dd3961931</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-31 07:03:18</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>348650665</payload_hash>
+        <record_name>Account Payable.Raise a purchase request</record_name>
+        <reverted_from/>
+        <source>b0f5086987585910532b43f7cebb355c</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 18:27:35</sys_created_on>
+        <sys_id>d82608a987585910532b43f7cebb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18196f82bf50000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 18:27:35</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>982608a97b585910746b534e2d6356d5</update_guid>
+        <update_guid_history>982608a97b585910746b534e2d6356d5:348650665</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Account Payable.Raise a purchase request">74ee08258790d910e80b40c5cebb3516</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-06-24 19:05:51</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0b393062b96949459de08f0408ffa321</sys_id>
+        <sys_metadata>b85984b1db12fc10fdffa82dd3961931</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Account Payable.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_scope_delete display_value="">393384065fb944b889a42fc77a1b4f10</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_b85984b1db12fc10fdffa82dd3961931</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_b85984b1db12fc10fdffa82dd3961931">d82608a987585910532b43f7cebb35d5</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-06-24 19:05:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

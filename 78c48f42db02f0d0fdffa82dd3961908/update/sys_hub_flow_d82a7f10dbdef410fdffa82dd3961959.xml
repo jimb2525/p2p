@@ -29,19 +29,22 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d82a7f10dbdef410fdffa82dd3961959</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Create goods receipt in SAP</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
         <sys_update_name>sys_hub_flow_d82a7f10dbdef410fdffa82dd3961959</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-01 04:05:33</sys_updated_on>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 18:27:55</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_variable_value action="delete_multiple" query="document_key=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959^id=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT INdc2a7f10dbdef410fdffa82dd396195a"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>d82a7f10dbdef410fdffa82dd3961959</id>
@@ -54,6 +57,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:44:30</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=dc2a7f10dbdef410fdffa82dd396195a"/>
     <sys_hub_flow_input action="delete_multiple" query="model=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN8f5a3f50dbdef410fdffa82dd39619dc"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -218,6 +222,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN935a7f50dbdef410fdffa82dd396190e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -372,6 +377,12 @@
         <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
         <value>{"version":"1.0","complexObject":{"name$":"FD3ab5c4947021101027d6c3fd3bfd5cb4","$COCollectionField":[{"PLANT":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"MOVE_TYPE":{"$cv":{"$c":"java.lang.String","$v":"101"}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"ENTRY_QNT":{"$cv":{"$c":"java.lang.String","$v":"1"}},"MVT_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VENDOR":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"STGE_LOC":{"$cv":{"$c":"java.lang.String","$v":"0001"}},"MATERIAL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4":{"$COCollectionField":[{"item":{"PLANT":"String","PLANT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Plant\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"MOVE_TYPE":"String","MOVE_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].PO_NUMBER\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ENTRY_QNT":"Number","ENTRY_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in unit of entry\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"MVT_IND":"String","MVT_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement indicator\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"VENDOR":"String","VENDOR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"STGE_LOC":"String","STGE_LOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage Location\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"MATERIAL":"String","MATERIAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Material\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"}},"serializationFormat":"JSON"}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=935a7f50dbdef410fdffa82dd396190e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=935a7f50dbdef410fdffa82dd396190e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959^sys_idNOT INc75a3f50dbdef410fdffa82dd39619e6"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>po_record</element>
@@ -386,16 +397,17 @@
         <sys_created_on>2021-08-27 08:45:31</sys_created_on>
         <sys_id>c75a3f50dbdef410fdffa82dd39619e6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>PO Record</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959_po_record_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN0f5a3f50dbdef410fdffa82dd39619f2"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sap_gr_number</element>
@@ -410,16 +422,18 @@
         <sys_created_on>2021-08-27 08:45:31</sys_created_on>
         <sys_id>0f5a3f50dbdef410fdffa82dd39619f2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP GR Number</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959_sap_gr_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d82a7f10dbdef410fdffa82dd3961959"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN05e717a9dbdabc10fdffa82dd396197f"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"05e717a9dbdabc10fdffa82dd396197f","name":"plan"}}</plan>
@@ -477,6 +491,9 @@
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_variable_value action="delete_multiple" query="document_key=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e^id=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT INd8e7d3a9dbdabc10fdffa82dd396199f"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>d4e7d3a9dbdabc10fdffa82dd396199e</id>
@@ -489,6 +506,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:27:16</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d8e7d3a9dbdabc10fdffa82dd396199f"/>
     <sys_hub_flow_input action="delete_multiple" query="model=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN20e7d3a9dbdabc10fdffa82dd39619ba"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -653,6 +671,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT INe0e717a9dbdabc10fdffa82dd3961927"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -779,6 +798,12 @@
         <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
         <value>{"version":"1.0","complexObject":{"name$":"FD3ab5c4947021101027d6c3fd3bfd5cb4","$COCollectionField":[{"PLANT":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"MOVE_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"ENTRY_QNT":{"$cv":{"$c":"java.lang.String","$v":"1"}},"MVT_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VENDOR":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"STGE_LOC":{"$cv":{"$c":"java.lang.String","$v":"0001"}},"MATERIAL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4":{"$COCollectionField":[{"item":{"PLANT":"String","PLANT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Plant\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"MOVE_TYPE":"String","MOVE_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].PO_NUMBER\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ENTRY_QNT":"Number","ENTRY_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in unit of entry\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"MVT_IND":"String","MVT_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement indicator\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"VENDOR":"String","VENDOR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"STGE_LOC":"String","STGE_LOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage Location\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"MATERIAL":"String","MATERIAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Material\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"}},"serializationFormat":"JSON"}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e0e717a9dbdabc10fdffa82dd3961927"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0e717a9dbdabc10fdffa82dd3961927"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN2ce7d3a9dbdabc10fdffa82dd39619ec"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>po_record</element>
@@ -793,16 +818,17 @@
         <sys_created_on>2021-08-31 03:27:17</sys_created_on>
         <sys_id>2ce7d3a9dbdabc10fdffa82dd39619ec</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>PO Record</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e_po_record_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN20e717a9dbdabc10fdffa82dd3961902"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sap_gr_number</element>
@@ -817,16 +843,17 @@
         <sys_created_on>2021-08-31 03:27:17</sys_created_on>
         <sys_id>20e717a9dbdabc10fdffa82dd3961902</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>SAP GR Number</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e_sap_gr_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e"/>
     <sys_hub_flow action="update">
         <sys_id>d82a7f10dbdef410fdffa82dd3961959</sys_id>
         <latest_snapshot>d4e7d3a9dbdabc10fdffa82dd396199e</latest_snapshot>

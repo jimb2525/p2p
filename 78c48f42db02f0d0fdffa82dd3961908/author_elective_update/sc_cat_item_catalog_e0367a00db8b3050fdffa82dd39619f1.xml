@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Raise a purchase request">48367a00db8b3050fdffa82dd39619c2</sc_cat_item>
+        <sc_catalog display_value="ESM Catalog">d5ac59461b862010366b1f49274bcb92</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jules.weijters</sys_created_by>
+        <sys_created_on>2021-10-02 15:56:18</sys_created_on>
+        <sys_id>e0367a00db8b3050fdffa82dd39619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ESM Catalog.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_e0367a00db8b3050fdffa82dd39619f1</sys_update_name>
+        <sys_updated_by>jules.weijters</sys_updated_by>
+        <sys_updated_on>2021-10-02 15:56:18</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</application>
+        <file_path/>
+        <instance_id>e3dd915bdbeef0100ae3ac44d4961951</instance_id>
+        <instance_name>jbelote14demo</instance_name>
+        <name>sc_cat_item_catalog_e0367a00db8b3050fdffa82dd39619f1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Raise a purchase request">48367a00db8b3050fdffa82dd39619c2</sc_cat_item><sc_catalog display_value="ESM Catalog">d5ac59461b862010366b1f49274bcb92</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>jules.weijters</sys_created_by><sys_created_on>2021-10-02 15:56:18</sys_created_on><sys_id>e0367a00db8b3050fdffa82dd39619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ESM Catalog.Raise a purchase request</sys_name><sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package><sys_policy/><sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope><sys_update_name>sc_cat_item_catalog_e0367a00db8b3050fdffa82dd39619f1</sys_update_name><sys_updated_by>jules.weijters</sys_updated_by><sys_updated_on>2021-10-02 15:56:18</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>812492023</payload_hash>
+        <record_name>ESM Catalog.Raise a purchase request</record_name>
+        <reverted_from/>
+        <source>b0f5086987585910532b43f7cebb355c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 18:27:35</sys_created_on>
+        <sys_id>042608a987585910532b43f7cebb35b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18196f82afe0000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 18:27:35</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>c02608a99c585910566626dc3c55d4b5</update_guid>
+        <update_guid_history>c02608a99c585910566626dc3c55d4b5:812492023</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ESM Catalog.Raise a purchase request">66be006d87985910532b43f7cebb35a9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 19:05:09</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1b8e1d54baa941c78539a013ee30cc91</sys_id>
+        <sys_metadata>e0367a00db8b3050fdffa82dd39619f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ESM Catalog.Raise a purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_parent display_value="">48367a00db8b3050fdffa82dd39619c2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_scope_delete display_value="">393384065fb944b889a42fc77a1b4f10</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_e0367a00db8b3050fdffa82dd39619f1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_e0367a00db8b3050fdffa82dd39619f1">042608a987585910532b43f7cebb35b5</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 19:05:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

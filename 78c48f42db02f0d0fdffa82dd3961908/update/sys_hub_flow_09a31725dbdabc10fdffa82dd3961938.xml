@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>09a31725dbdabc10fdffa82dd3961938</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>GR Process</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
         <sys_update_name>sys_hub_flow_09a31725dbdabc10fdffa82dd3961938</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 06:03:06</sys_updated_on>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 18:27:42</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=09a31725dbdabc10fdffa82dd3961938"/>
@@ -155,6 +155,8 @@
         <value>x_snc_sap_a_p_au_0_goods_receipt</value>
         <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=f6a433e1db9ebc10fdffa82dd396199e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=09a31725dbdabc10fdffa82dd3961938"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=09a31725dbdabc10fdffa82dd3961938^sys_idNOT IN41a31725dbdabc10fdffa82dd396193a"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>09a31725dbdabc10fdffa82dd3961938</id>
@@ -167,6 +169,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:08:45</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=41a31725dbdabc10fdffa82dd396193a"/>
     <sys_hub_flow_input action="delete_multiple" query="model=09a31725dbdabc10fdffa82dd3961938^sys_idNOT IN251b1faddbdabc10fdffa82dd39619e1,291b5faddbdabc10fdffa82dd3961901,bea433e1db9ebc10fdffa82dd3961993"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -411,6 +414,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=09a31725dbdabc10fdffa82dd3961938"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09a31725dbdabc10fdffa82dd3961938"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=09a31725dbdabc10fdffa82dd3961938^sys_idNOT IN4ba433e1db9ebc10fdffa82dd39619b9,95a37b21db9ebc10fdffa82dd396194d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -499,6 +504,8 @@
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ba433e1db9ebc10fdffa82dd39619b9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ba433e1db9ebc10fdffa82dd39619b9"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -650,6 +657,8 @@
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=95a37b21db9ebc10fdffa82dd396194d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=95a37b21db9ebc10fdffa82dd396194d"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=09a31725dbdabc10fdffa82dd3961938^sys_idNOT INc3a433e1db9ebc10fdffa82dd39619bc"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -711,6 +720,7 @@
         <table>var__m_sys_hub_sub_flow_instance_inputs_c3a433e1db9ebc10fdffa82dd39619bc</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c3a433e1db9ebc10fdffa82dd39619bc^id=c3a433e1db9ebc10fdffa82dd39619bc"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c3a433e1db9ebc10fdffa82dd39619bc^sys_idNOT INc3a433e1db9ebc10fdffa82dd39619bd"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -793,6 +803,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3a433e1db9ebc10fdffa82dd39619bc"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=09a31725dbdabc10fdffa82dd3961938^sys_idNOT INc3a433e1db9ebc10fdffa82dd39619b2"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">c7a433e1db9ebc10fdffa82dd39619b1</block>
@@ -838,6 +849,10 @@
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{0c8397fa-b209-43fa-b91c-edf23e807a46.approval_state}}=approved</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c3a433e1db9ebc10fdffa82dd39619b2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3a433e1db9ebc10fdffa82dd39619b2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=09a31725dbdabc10fdffa82dd3961938"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=09a31725dbdabc10fdffa82dd3961938"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_09a31725dbdabc10fdffa82dd3961938^sys_idNOT IN611b5faddbdabc10fdffa82dd3961900,e51b5faddbdabc10fdffa82dd3961906,faa433e1db9ebc10fdffa82dd3961999"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
@@ -852,11 +867,11 @@
         <sys_created_on>2021-08-31 03:41:17</sys_created_on>
         <sys_id>611b5faddbdabc10fdffa82dd3961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_09a31725dbdabc10fdffa82dd3961938_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:41:17</sys_updated_on>
         <url/>
@@ -875,11 +890,11 @@
         <sys_created_on>2021-08-31 03:41:17</sys_created_on>
         <sys_id>e51b5faddbdabc10fdffa82dd3961906</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_09a31725dbdabc10fdffa82dd3961938_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:41:17</sys_updated_on>
         <url/>
@@ -898,16 +913,19 @@
         <sys_created_on>2021-08-31 05:33:03</sys_created_on>
         <sys_id>faa433e1db9ebc10fdffa82dd3961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_09a31725dbdabc10fdffa82dd3961938_changed_fields_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 05:33:03</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_09a31725dbdabc10fdffa82dd3961938"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_09a31725dbdabc10fdffa82dd3961938"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_09a31725dbdabc10fdffa82dd3961938"/>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=09a31725dbdabc10fdffa82dd3961938^sys_idNOT IN6e1b5faddbdabc10fdffa82dd39619e4"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
@@ -926,6 +944,7 @@
         <sys_updated_on>2021-08-31 05:35:48</sys_updated_on>
         <trigger display_value="">c3457b25db9ebc10fdffa82dd3961933</trigger>
     </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=09a31725dbdabc10fdffa82dd3961938"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
@@ -1057,6 +1076,8 @@
         <value>unique_changes</value>
         <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=461b5faddbdabc10fdffa82dd39619a6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=061b5faddbdabc10fdffa82dd396196c"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=061b5faddbdabc10fdffa82dd396196c^sys_idNOT IN0a1b5faddbdabc10fdffa82dd396196d"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>061b5faddbdabc10fdffa82dd396196c</id>
@@ -1069,6 +1090,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:41:19</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0a1b5faddbdabc10fdffa82dd396196d"/>
     <sys_hub_flow_input action="delete_multiple" query="model=061b5faddbdabc10fdffa82dd396196c^sys_idNOT IN0a1b5faddbdabc10fdffa82dd396197f,73a473e1db9ebc10fdffa82dd39619f8,8e1b5faddbdabc10fdffa82dd396196e"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1313,6 +1335,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=061b5faddbdabc10fdffa82dd396196c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=061b5faddbdabc10fdffa82dd396196c"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=061b5faddbdabc10fdffa82dd396196c^sys_idNOT IN84b4b3e1db9ebc10fdffa82dd3961952,bfa4b3e1db9ebc10fdffa82dd3961917"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1401,6 +1425,8 @@
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=84b4b3e1db9ebc10fdffa82dd3961952"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=84b4b3e1db9ebc10fdffa82dd3961952"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1552,6 +1578,8 @@
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bfa4b3e1db9ebc10fdffa82dd3961917"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bfa4b3e1db9ebc10fdffa82dd3961917"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=061b5faddbdabc10fdffa82dd396196c^sys_idNOT INccb4b3e1db9ebc10fdffa82dd3961958"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -1613,6 +1641,7 @@
         <table>var__m_sys_hub_sub_flow_instance_inputs_ccb4b3e1db9ebc10fdffa82dd3961958</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_ccb4b3e1db9ebc10fdffa82dd3961958^id=ccb4b3e1db9ebc10fdffa82dd3961958"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=ccb4b3e1db9ebc10fdffa82dd3961958^sys_idNOT IN88b4b3e1db9ebc10fdffa82dd3961959"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1695,6 +1724,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ccb4b3e1db9ebc10fdffa82dd3961958"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=061b5faddbdabc10fdffa82dd396196c^sys_idNOT IN44b4b3e1db9ebc10fdffa82dd3961955"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">c7a433e1db9ebc10fdffa82dd39619b1</block>
@@ -1740,6 +1770,10 @@
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{0c8397fa-b209-43fa-b91c-edf23e807a46.approval_state}}=approved</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=44b4b3e1db9ebc10fdffa82dd3961955"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=44b4b3e1db9ebc10fdffa82dd3961955"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=061b5faddbdabc10fdffa82dd396196c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=061b5faddbdabc10fdffa82dd396196c"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_061b5faddbdabc10fdffa82dd396196c^sys_idNOT IN3ba473e1db9ebc10fdffa82dd39619ff,821b5faddbdabc10fdffa82dd396197b,c61b5faddbdabc10fdffa82dd396199f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>changed_fields</element>
@@ -1754,11 +1788,11 @@
         <sys_created_on>2021-08-31 05:33:07</sys_created_on>
         <sys_id>3ba473e1db9ebc10fdffa82dd39619ff</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_061b5faddbdabc10fdffa82dd396196c_changed_fields_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 05:33:07</sys_updated_on>
         <url/>
@@ -1777,11 +1811,11 @@
         <sys_created_on>2021-08-31 03:41:19</sys_created_on>
         <sys_id>821b5faddbdabc10fdffa82dd396197b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_061b5faddbdabc10fdffa82dd396196c_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:41:19</sys_updated_on>
         <url/>
@@ -1800,16 +1834,19 @@
         <sys_created_on>2021-08-31 03:41:19</sys_created_on>
         <sys_id>c61b5faddbdabc10fdffa82dd396199f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_061b5faddbdabc10fdffa82dd396196c_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-08-31 03:41:19</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_061b5faddbdabc10fdffa82dd396196c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_061b5faddbdabc10fdffa82dd396196c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_061b5faddbdabc10fdffa82dd396196c"/>
     <sys_hub_flow action="update">
         <sys_id>09a31725dbdabc10fdffa82dd3961938</sys_id>
         <latest_snapshot>061b5faddbdabc10fdffa82dd396196c</latest_snapshot>
