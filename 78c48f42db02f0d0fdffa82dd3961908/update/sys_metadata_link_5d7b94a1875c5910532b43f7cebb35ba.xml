@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>69fa30b21b7d0d107fdcca24164bcbb8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_snc_sap_a_p_au_0_goods_receipt">
+    <x_snc_sap_a_p_au_0_goods_receipt action="INSERT_OR_UPDATE">
+        <action_status/>
+        <active>false</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <agile_story/>
+        <approval>approved</approval>
+        <approval_history/>
+        <approval_set>2022-02-24 12:58:33</approval_set>
+        <assigned_to/>
+        <assignment_group/>
+        <business_duration/>
+        <business_service/>
+        <calendar_duration/>
+        <close_notes/>
+        <closed_at>2022-02-24 12:58:33</closed_at>
+        <closed_by/>
+        <cmdb_ci/>
+        <cmdb_ci_business_app/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <contact_type/>
+        <contract/>
+        <correlation_display/>
+        <correlation_id/>
+        <delivery_plan/>
+        <delivery_task/>
+        <description/>
+        <due_date/>
+        <escalation>0</escalation>
+        <expected_start/>
+        <follow_up/>
+        <goods_movement/>
+        <gr_document_no_in_sap>5000001020</gr_document_no_in_sap>
+        <group_list/>
+        <impact>3</impact>
+        <knowledge>false</knowledge>
+        <linked_po display_value="PORDER0001092">c0fa38721bbd051061cdba23164bcb0c</linked_po>
+        <location/>
+        <made_sla>true</made_sla>
+        <needs_attention>false</needs_attention>
+        <number>GRECPT0001057</number>
+        <opened_at>2022-02-24 12:53:51</opened_at>
+        <opened_by display_value="">system</opened_by>
+        <order/>
+        <parent/>
+        <posting_date/>
+        <priority>4</priority>
+        <reassignment_count>0</reassignment_count>
+        <rejection_goto/>
+        <route_reason/>
+        <service_offering/>
+        <short_description>webcam</short_description>
+        <skills/>
+        <sla_due/>
+        <sn_esign_document/>
+        <sn_esign_esignature_configuration/>
+        <sn_hr_le_activity/>
+        <state>3</state>
+        <sys_class_name>x_snc_sap_a_p_au_0_goods_receipt</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-02-24 12:53:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69fa30b21b7d0d107fdcca24164bcbb8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-02-24 12:58:33</sys_updated_on>
+        <task_effective_number>GRECPT0001057</task_effective_number>
+        <time_worked/>
+        <universal_request/>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end/>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start/>
+    </x_snc_sap_a_p_au_0_goods_receipt>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-06-24 20:00:46</sys_created_on>
+        <sys_id>5d7b94a1875c5910532b43f7cebb35ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GRECPT0001057</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_metadata_link_5d7b94a1875c5910532b43f7cebb35ba</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-06-24 20:00:46</sys_updated_on>
+        <tablename>x_snc_sap_a_p_au_0_goods_receipt</tablename>
+    </sys_metadata_link>
+</record_update>
