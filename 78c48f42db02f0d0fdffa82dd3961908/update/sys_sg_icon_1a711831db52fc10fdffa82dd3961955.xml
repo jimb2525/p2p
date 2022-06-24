@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon>{"Shape":"Circle","FontName":"now-mobile-icons-buttons","Value":"e914","Name":"icon-File-Solid","FontColor":"#2e2e2e","BackgroundColor":"#2e2e2e"}</icon>
+        <name>icon-File-Solid</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:38:53</sys_created_on>
+        <sys_id>1a711831db52fc10fdffa82dd3961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>icon-File-Solid</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_sg_icon_1a711831db52fc10fdffa82dd3961955</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 07:39:13</sys_updated_on>
+        <type>font</type>
+    </sys_sg_icon>
+</record_update>

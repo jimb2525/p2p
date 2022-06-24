@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_language">
+    <sys_cb_topic_language action="INSERT_OR_UPDATE">
+        <cb_topic_id display_value="Raise a Purchase Request">ca83dcf1db52fc10fdffa82dd396199f</cb_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"node_id":"0077ad1d19964d28bbfe6148b2d587fb","variable_name":"item_name","nlu_entity":"","nlu_entity_label":""},{"node_id":"40779dd3ac6246db8a29dbed69a52971","variable_name":"price","nlu_entity":"","nlu_entity_label":""},{"node_id":"5e063c81a26c411f8e149c5b328c5071","variable_name":"quantity","nlu_entity":"","nlu_entity_label":""},{"node_id":"3514ecfde2b94066b815a1d7fa797307","variable_name":"vendor","nlu_entity":"","nlu_entity_label":""},{"node_id":"e35e7bc923cf40b7be8a4becbc8f6081","variable_name":"user_select","nlu_entity":"","nlu_entity_label":""},{"node_id":"9efd81d2ad894814a30bca5253a97cca","variable_name":"description","nlu_entity":"","nlu_entity_label":""},{"node_id":"c628a9db087f42e0ba41f88c7a83ac16","variable_name":"open_by","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_intent>Raise a PR</nlu_intent>
+        <nlu_intent_label>Raise a PR</nlu_intent_label>
+        <nlu_model>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</nlu_model>
+        <nlu_model_label>Purchasing</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cb_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:47:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5e83dcf1db52fc10fdffa82dd39619d9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_cb_topic_language_5e83dcf1db52fc10fdffa82dd39619d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-05 13:42:42</sys_updated_on>
+    </sys_cb_topic_language>
+</record_update>

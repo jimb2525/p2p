@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>lookup_payments_sap</internal_name>
+        <label_cache>[{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6782086b-c5d1-4e26-a751-60e475a11c1e"}},{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f1af8c25-caed-450b-87a0-742d12a961fe"}},{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.response","label":"1➛Pending Payments","reference_display":"Pending Payments","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}},{"name":"subflow.vendor.name","label":"Input➛vendor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"core_company","column_name":"name"},{"name":"subflow.date","label":"Input➛date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4ad6c641-3d49-4759-8462-9939c40f75d4"}}]</label_cache>
+        <master_snapshot>97ddb361dbdebc10fdffa82dd39619c2</master_snapshot>
+        <name>Lookup payments SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:48:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d0b37d0dbdef410fdffa82dd3961931</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Lookup payments SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_hub_flow_7d0b37d0dbdef410fdffa82dd3961931</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:16</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7d0b37d0dbdef410fdffa82dd3961931"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN710b37d0dbdef410fdffa82dd3961933"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7d0b37d0dbdef410fdffa82dd3961931</id>
+        <name>Lookup payments SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:48:25</sys_created_on>
+        <sys_id>710b37d0dbdef410fdffa82dd3961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:48:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN72ddb361dbdebc10fdffa82dd396192c,baddb361dbdebc10fdffa82dd3961933"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=4ad6c641-3d49-4759-8462-9939c40f75d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</model>
+        <model_id>7d0b37d0dbdef410fdffa82dd3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>72ddb361dbdebc10fdffa82dd396192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2f908414-cc28-41f1-a919-50b5a5c534c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>core_company</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vendor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>vendor</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</model>
+        <model_id>7d0b37d0dbdef410fdffa82dd3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="core_company">core_company</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>baddb361dbdebc10fdffa82dd3961933</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN30abf314dbdef410fdffa82dd39619c5,34abf314dbdef410fdffa82dd39619a3,f0abf314dbdef410fdffa82dd39619ae"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=13fd7462-36dd-49b1-b40c-ae993a06dc2d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>SAP payment date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</model>
+        <model_id>7d0b37d0dbdef410fdffa82dd3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>30abf314dbdef410fdffa82dd39619c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18a81f51-4bfb-4652-ab89-d92bf8fefc4c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP payment number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</model>
+        <model_id>7d0b37d0dbdef410fdffa82dd3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>34abf314dbdef410fdffa82dd39619a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=currency,uiTypeLabel=Currency,uiUniqueId=7657b00b-ec38-49d4-b43e-baf6817644f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_amount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Currency">currency</internal_type>
+        <label>SAP payment amount</label>
+        <mandatory>false</mandatory>
+        <max_length>20</max_length>
+        <model display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</model>
+        <model_id>7d0b37d0dbdef410fdffa82dd3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>f0abf314dbdef410fdffa82dd39619ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INf0abf314dbdef410fdffa82dd39619fe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Payments">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
+        <sys_id>f0abf314dbdef410fdffa82dd39619fe</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:16</sys_updated_on>
+        <ui_id>5fe5e8cd-ff27-4eb4-8664-c25bd87a6470</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f0abf314dbdef410fdffa82dd39619fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0abf314dbdef410fdffa82dd39619fe</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>47ddb361dbdebc10fdffa82dd3961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <value>1000</value>
+        <variable display_value="Company Code">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0abf314dbdef410fdffa82dd39619fe</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>4fddb361dbdebc10fdffa82dd3961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <value/>
+        <variable display_value="Key date">328350c9db11a41072af56a4dc9619d2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0abf314dbdef410fdffa82dd39619fe</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
+        <sys_id>b8ab3714dbdef410fdffa82dd3961900</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"CODE","label":"Message code","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"}],"name":"RETURN","label":"Return Code [ RETURN ]","type":"object"},{"children":[{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SP_GL_IND","label":"Special G/L ind","type":"string"},{"name":"CLEAR_DATE","label":"Clearing date","type":"date"},{"name":"CLR_DOC_NO","label":"Clearing Document","type":"string"},{"name":"ALLOC_NMBR","label":"Assignment","type":"string"},{"name":"FISC_YEAR","label":"Fiscal Year","type":"string"},{"name":"DOC_NO","label":"Document Number","type":"string"},{"name":"ITEM_NUM","label":"Line item [ ITEM_NUM ]","type":"string"},{"name":"PSTNG_DATE","label":"Posting Date","type":"date"},{"name":"DOC_DATE","label":"Document Date","type":"date"},{"name":"ENTRY_DATE","label":"Entry Date","type":"date"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"LOC_CURRCY","label":"Local Currency","type":"string"},{"name":"REF_DOC_NO","label":"Reference [ REF_DOC_NO ]","type":"string"},{"name":"DOC_TYPE","label":"Document type","type":"string"},{"name":"FIS_PERIOD","label":"Posting period","type":"string"},{"name":"POST_KEY","label":"Posting Key","type":"string"},{"name":"DB_CR_IND","label":"Debit/Credit ind","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"TAX_CODE","label":"Tax code [ TAX_CODE ]","type":"string"},{"name":"LC_AMOUNT","label":"Amount in LC","type":"string"},{"name":"AMT_DOCCUR","label":"Amount [ AMT_DOCCUR ]","type":"string"},{"name":"LC_TAX","label":"LC tax amount","type":"string"},{"name":"TX_DOC_CUR","label":"Tax amount","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"BRANCH","label":"Branch account","type":"string"},{"name":"BLINE_DATE","label":"Baseline payment dte","type":"date"},{"name":"PMNTTRMS","label":"Payment terms","type":"string"},{"name":"DSCT_DAYS1","label":"Days 1","type":"string"},{"name":"DSCT_DAYS2","label":"Days 2","type":"string"},{"name":"NETTERMS","label":"Days net","type":"string"},{"name":"DSCT_PCT1","label":"Disc percent 1","type":"string"},{"name":"DSCT_PCT2","label":"Disc percent 2","type":"string"},{"name":"DISC_BASE","label":"Discount base","type":"string"},{"name":"DSC_AMT_LC","label":"Cash discount amount","type":"string"},{"name":"DSC_AMT_DC","label":"Discount amount","type":"string"},{"name":"PYMT_METH","label":"Payment Method","type":"string"},{"name":"PMNT_BLOCK","label":"Payment block","type":"string"},{"name":"FIXEDTERMS","label":"Fixed","type":"string"},{"name":"INV_REF","label":"Invoice reference","type":"string"},{"name":"INV_YEAR","label":"Fiscal year","type":"string"},{"name":"INV_ITEM","label":"Line item [ INV_ITEM ]","type":"string"},{"name":"DUNN_BLOCK","label":"Dunning Block","type":"string"},{"name":"DUNN_KEY","label":"Dunning Key","type":"string"},{"name":"LAST_DUNN","label":"Last Dunned","type":"date"},{"name":"DUNN_LEVEL","label":"Dunning Level","type":"string"},{"name":"DUNN_AREA","label":"Dunning Area","type":"string"},{"name":"DOC_STATUS","label":"Doc status","type":"string"},{"name":"NXT_DOCTYP","label":"Follow-on doc type","type":"string"},{"name":"VAT_REG_NO","label":"VAT Registration No","type":"string"},{"name":"REASON_CDE","label":"Reason code","type":"string"},{"name":"PMTMTHSUPL","label":"Pmt meth supplement","type":"string"},{"name":"REF_KEY_1","label":"Reference Key 1","type":"string"},{"name":"REF_KEY_2","label":"Reference Key 2","type":"string"},{"name":"T_CURRENCY","label":"General ledger currency","type":"string"},{"name":"AMOUNT","label":"Amount [ AMOUNT ]","type":"string"},{"name":"NET_AMOUNT","label":"Payment amount","type":"string"},{"name":"NAME","label":"Name","type":"string"},{"name":"NAME_2","label":"Name 2","type":"string"},{"name":"NAME_3","label":"Name 3","type":"string"},{"name":"NAME_4","label":"Name 4","type":"string"},{"name":"POSTL_CODE","label":"Postal Code","type":"string"},{"name":"CITY","label":"City","type":"string"},{"name":"COUNTRY","label":"Country","type":"string"},{"name":"STREET","label":"Street","type":"string"},{"name":"PO_BOX","label":"PO Box","type":"string"},{"name":"POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"POBK_CURAC","label":"Post bank acct no","type":"string"},{"name":"BANK_ACCT","label":"Bank Account","type":"string"},{"name":"BANK_KEY","label":"Bank Key","type":"string"},{"name":"BANK_CTRY","label":"Bank Country","type":"string"},{"name":"TAX_NO_1","label":"Tax Number 1","type":"string"},{"name":"TAX_NO_2","label":"Tax Number 2","type":"string"},{"name":"TAX","label":"Liable for VAT","type":"string"},{"name":"EQUAL_TAX","label":"Sales equalizatn tax","type":"string"},{"name":"REGION","label":"Region","type":"string"},{"name":"CTRL_KEY","label":"Bank control key","type":"string"},{"name":"INSTR_KEY","label":"Instruction key","type":"string"},{"name":"PAYEE_CODE","label":"Payment recipient","type":"string"},{"name":"LANGU","label":"Language Key","type":"string"},{"name":"BILL_LIFE","label":"Bill of exch life","type":"string"},{"name":"BE_TAXCODE","label":"B/exch tax code","type":"string"},{"name":"BILLTAX_LC","label":"Bill/exchange tax LC","type":"string"},{"name":"BILLTAX_FC","label":"Bill of exchange tax","type":"string"},{"name":"LC_COL_CHG","label":"LC collection charge","type":"string"},{"name":"COLL_CHARG","label":"Collection charge","type":"string"},{"name":"CHGS_TX_CD","label":"Tax code [ CHGS_TX_CD ]","type":"string"},{"name":"ISSUE_DATE","label":"Issue date","type":"date"},{"name":"USAGEDATE","label":"Used on","type":"date"},{"name":"BILL_USAGE","label":"Planned usage","type":"string"},{"name":"DOMICILE","label":"Domicile","type":"string"},{"name":"DRAWER","label":"Drawer","type":"string"},{"name":"CTRBNK_LOC","label":"Cen bank loc","type":"string"},{"name":"DRAW_CITY1","label":"City of bill of exch drawer","type":"string"},{"name":"DRAWEE","label":"Drawee","type":"string"},{"name":"DRAW_CITY2","label":"City of b/exch drawee","type":"string"},{"name":"DISCT_DAYS","label":"Discount days","type":"string"},{"name":"DISCT_RATE","label":"Discnt rate","type":"string"},{"name":"ACCEPTED","label":"Bill of exch accepted","type":"string"},{"name":"BILLSTATUS","label":"Bill/exch status","type":"string"},{"name":"PRTEST_IND","label":"Bill protest ID","type":"string"},{"name":"BE_DEMAND","label":"Bill on demand","type":"string"},{"name":"OBJ_TYPE","label":"Reference procedure","type":"string"},{"name":"REF_DOC","label":"Reference document","type":"string"},{"name":"REF_ORG_UN","label":"Reference org unit","type":"string"},{"name":"REVERSAL_DOC","label":"Reversed with","type":"string"},{"name":"SP_GL_TYPE","label":"Sp G/L trans type","type":"string"},{"name":"NEG_POSTNG","label":"Negative posting","type":"string"},{"name":"REF_DOC_NO_LONG","label":"Reference [ REF_DOC_NO_LONG ]","type":"string"},{"name":"BILL_DOC","label":"Billing Document","type":"string"}],"name":"LINEITEMS","attributes":{"child_type":"object"},"label":"Line items [ LINEITEMS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}}</value>
+        <variable display_value="Pending Payments">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0abf314dbdef410fdffa82dd39619fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
+        <sys_id>f4ab3714dbdef410fdffa82dd3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f0abf314dbdef410fdffa82dd39619fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>COMPANYCODE</field>
+        <id>f0abf314dbdef410fdffa82dd39619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>c7ddb361dbdebc10fdffa82dd3961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conn_alias</field>
+        <id>f0abf314dbdef410fdffa82dd39619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
+        <sys_id>b0ab3714dbdef410fdffa82dd3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>CUSTOMER</field>
+        <id>f0abf314dbdef410fdffa82dd39619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>8fddb361dbdebc10fdffa82dd3961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value>{{subflow.vendor.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_response</field>
+        <id>f0abf314dbdef410fdffa82dd39619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:06</sys_created_on>
+        <sys_id>74ab3714dbdef410fdffa82dd3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>KEYDATE</field>
+        <id>f0abf314dbdef410fdffa82dd39619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>43ddb361dbdebc10fdffa82dd3961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value>{{subflow.date}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INc7ddb361dbdebc10fdffa82dd396193d,f2ddb361dbdebc10fdffa82dd3961932"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vendor</element>
+        <help/>
+        <hint/>
+        <label>vendor</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>c7ddb361dbdebc10fdffa82dd396193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>date</element>
+        <help/>
+        <hint/>
+        <label>date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:12</sys_created_on>
+        <sys_id>f2ddb361dbdebc10fdffa82dd3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT IN30abf314dbdef410fdffa82dd39619ce,7cabf314dbdef410fdffa82dd39619ac,b8abf314dbdef410fdffa82dd39619c3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_date</element>
+        <help/>
+        <hint/>
+        <label>SAP payment date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>30abf314dbdef410fdffa82dd39619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_number</element>
+        <help/>
+        <hint/>
+        <label>SAP payment number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>7cabf314dbdef410fdffa82dd39619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_amount</element>
+        <help/>
+        <hint/>
+        <label>SAP payment amount</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7d0b37d0dbdef410fdffa82dd3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:51:05</sys_created_on>
+        <sys_id>b8abf314dbdef410fdffa82dd39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:51:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7d0b37d0dbdef410fdffa82dd3961931^sys_idNOT INf7ddf361dbdebc10fdffa82dd39619c1"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1192b3e</plan>
+        <plan_id display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</plan_id>
+        <snapshot>97ddb361dbdebc10fdffa82dd39619c2</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7ddf361dbdebc10fdffa82dd39619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:16</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>lookup_payments_sap</internal_name>
+        <label_cache>[{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6782086b-c5d1-4e26-a751-60e475a11c1e"}},{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f1af8c25-caed-450b-87a0-742d12a961fe"}},{"name":"5fe5e8cd-ff27-4eb4-8664-c25bd87a6470.response","label":"1➛Pending Payments","reference_display":"Pending Payments","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}},{"name":"subflow.vendor.name","label":"Input➛vendor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"core_company","column_name":"name"},{"name":"subflow.date","label":"Input➛date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4ad6c641-3d49-4759-8462-9939c40f75d4"}}]</label_cache>
+        <master>true</master>
+        <name>Lookup payments SAP</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Lookup payments SAP">7d0b37d0dbdef410fdffa82dd3961931</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>97ddb361dbdebc10fdffa82dd39619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=97ddb361dbdebc10fdffa82dd39619c2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN9bddb361dbdebc10fdffa82dd39619c3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>97ddb361dbdebc10fdffa82dd39619c2</id>
+        <name>Lookup payments SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:13</sys_created_on>
+        <sys_id>9bddb361dbdebc10fdffa82dd39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN5fddb361dbdebc10fdffa82dd39619c4,d3ddb361dbdebc10fdffa82dd39619e7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=4ad6c641-3d49-4759-8462-9939c40f75d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</model>
+        <model_id>97ddb361dbdebc10fdffa82dd39619c2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:13</sys_created_on>
+        <sys_id>5fddb361dbdebc10fdffa82dd39619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2f908414-cc28-41f1-a919-50b5a5c534c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>core_company</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vendor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>vendor</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</model>
+        <model_id>97ddb361dbdebc10fdffa82dd39619c2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="core_company">core_company</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:13</sys_created_on>
+        <sys_id>d3ddb361dbdebc10fdffa82dd39619e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN2bddf361dbdebc10fdffa82dd396191f,2fddf361dbdebc10fdffa82dd396190d,9bddb361dbdebc10fdffa82dd39619fa"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=13fd7462-36dd-49b1-b40c-ae993a06dc2d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>SAP payment date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</model>
+        <model_id>97ddb361dbdebc10fdffa82dd39619c2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>2bddf361dbdebc10fdffa82dd396191f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=currency,uiTypeLabel=Currency,uiUniqueId=7657b00b-ec38-49d4-b43e-baf6817644f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_amount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Currency">currency</internal_type>
+        <label>SAP payment amount</label>
+        <mandatory>false</mandatory>
+        <max_length>20</max_length>
+        <model display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</model>
+        <model_id>97ddb361dbdebc10fdffa82dd39619c2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>2fddf361dbdebc10fdffa82dd396190d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18a81f51-4bfb-4652-ab89-d92bf8fefc4c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_payment_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP payment number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</model>
+        <model_id>97ddb361dbdebc10fdffa82dd39619c2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>9bddb361dbdebc10fdffa82dd39619fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN27ddf361dbdebc10fdffa82dd396195a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Payments">706fb5d81bd16c10d2cf7669cc4bcb2b</action_type>
+        <action_type_parent display_value="Look Up Payments">f6b831541bd16c10d2cf7669cc4bcb96</action_type_parent>
+        <comment/>
+        <compiled_snapshot>706fb5d81bd16c10d2cf7669cc4bcb2b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Lookup payments SAP">97ddb361dbdebc10fdffa82dd39619c2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>27ddf361dbdebc10fdffa82dd396195a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <ui_id>5fe5e8cd-ff27-4eb4-8664-c25bd87a6470</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=27ddf361dbdebc10fdffa82dd396195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>27ddf361dbdebc10fdffa82dd396195a</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>2bddf361dbdebc10fdffa82dd396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"CODE","label":"Message code","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"}],"name":"RETURN","label":"Return Code [ RETURN ]","type":"object"},{"children":[{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SP_GL_IND","label":"Special G/L ind","type":"string"},{"name":"CLEAR_DATE","label":"Clearing date","type":"date"},{"name":"CLR_DOC_NO","label":"Clearing Document","type":"string"},{"name":"ALLOC_NMBR","label":"Assignment","type":"string"},{"name":"FISC_YEAR","label":"Fiscal Year","type":"string"},{"name":"DOC_NO","label":"Document Number","type":"string"},{"name":"ITEM_NUM","label":"Line item [ ITEM_NUM ]","type":"string"},{"name":"PSTNG_DATE","label":"Posting Date","type":"date"},{"name":"DOC_DATE","label":"Document Date","type":"date"},{"name":"ENTRY_DATE","label":"Entry Date","type":"date"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"LOC_CURRCY","label":"Local Currency","type":"string"},{"name":"REF_DOC_NO","label":"Reference [ REF_DOC_NO ]","type":"string"},{"name":"DOC_TYPE","label":"Document type","type":"string"},{"name":"FIS_PERIOD","label":"Posting period","type":"string"},{"name":"POST_KEY","label":"Posting Key","type":"string"},{"name":"DB_CR_IND","label":"Debit/Credit ind","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"TAX_CODE","label":"Tax code [ TAX_CODE ]","type":"string"},{"name":"LC_AMOUNT","label":"Amount in LC","type":"string"},{"name":"AMT_DOCCUR","label":"Amount [ AMT_DOCCUR ]","type":"string"},{"name":"LC_TAX","label":"LC tax amount","type":"string"},{"name":"TX_DOC_CUR","label":"Tax amount","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"BRANCH","label":"Branch account","type":"string"},{"name":"BLINE_DATE","label":"Baseline payment dte","type":"date"},{"name":"PMNTTRMS","label":"Payment terms","type":"string"},{"name":"DSCT_DAYS1","label":"Days 1","type":"string"},{"name":"DSCT_DAYS2","label":"Days 2","type":"string"},{"name":"NETTERMS","label":"Days net","type":"string"},{"name":"DSCT_PCT1","label":"Disc percent 1","type":"string"},{"name":"DSCT_PCT2","label":"Disc percent 2","type":"string"},{"name":"DISC_BASE","label":"Discount base","type":"string"},{"name":"DSC_AMT_LC","label":"Cash discount amount","type":"string"},{"name":"DSC_AMT_DC","label":"Discount amount","type":"string"},{"name":"PYMT_METH","label":"Payment Method","type":"string"},{"name":"PMNT_BLOCK","label":"Payment block","type":"string"},{"name":"FIXEDTERMS","label":"Fixed","type":"string"},{"name":"INV_REF","label":"Invoice reference","type":"string"},{"name":"INV_YEAR","label":"Fiscal year","type":"string"},{"name":"INV_ITEM","label":"Line item [ INV_ITEM ]","type":"string"},{"name":"DUNN_BLOCK","label":"Dunning Block","type":"string"},{"name":"DUNN_KEY","label":"Dunning Key","type":"string"},{"name":"LAST_DUNN","label":"Last Dunned","type":"date"},{"name":"DUNN_LEVEL","label":"Dunning Level","type":"string"},{"name":"DUNN_AREA","label":"Dunning Area","type":"string"},{"name":"DOC_STATUS","label":"Doc status","type":"string"},{"name":"NXT_DOCTYP","label":"Follow-on doc type","type":"string"},{"name":"VAT_REG_NO","label":"VAT Registration No","type":"string"},{"name":"REASON_CDE","label":"Reason code","type":"string"},{"name":"PMTMTHSUPL","label":"Pmt meth supplement","type":"string"},{"name":"REF_KEY_1","label":"Reference Key 1","type":"string"},{"name":"REF_KEY_2","label":"Reference Key 2","type":"string"},{"name":"T_CURRENCY","label":"General ledger currency","type":"string"},{"name":"AMOUNT","label":"Amount [ AMOUNT ]","type":"string"},{"name":"NET_AMOUNT","label":"Payment amount","type":"string"},{"name":"NAME","label":"Name","type":"string"},{"name":"NAME_2","label":"Name 2","type":"string"},{"name":"NAME_3","label":"Name 3","type":"string"},{"name":"NAME_4","label":"Name 4","type":"string"},{"name":"POSTL_CODE","label":"Postal Code","type":"string"},{"name":"CITY","label":"City","type":"string"},{"name":"COUNTRY","label":"Country","type":"string"},{"name":"STREET","label":"Street","type":"string"},{"name":"PO_BOX","label":"PO Box","type":"string"},{"name":"POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"POBK_CURAC","label":"Post bank acct no","type":"string"},{"name":"BANK_ACCT","label":"Bank Account","type":"string"},{"name":"BANK_KEY","label":"Bank Key","type":"string"},{"name":"BANK_CTRY","label":"Bank Country","type":"string"},{"name":"TAX_NO_1","label":"Tax Number 1","type":"string"},{"name":"TAX_NO_2","label":"Tax Number 2","type":"string"},{"name":"TAX","label":"Liable for VAT","type":"string"},{"name":"EQUAL_TAX","label":"Sales equalizatn tax","type":"string"},{"name":"REGION","label":"Region","type":"string"},{"name":"CTRL_KEY","label":"Bank control key","type":"string"},{"name":"INSTR_KEY","label":"Instruction key","type":"string"},{"name":"PAYEE_CODE","label":"Payment recipient","type":"string"},{"name":"LANGU","label":"Language Key","type":"string"},{"name":"BILL_LIFE","label":"Bill of exch life","type":"string"},{"name":"BE_TAXCODE","label":"B/exch tax code","type":"string"},{"name":"BILLTAX_LC","label":"Bill/exchange tax LC","type":"string"},{"name":"BILLTAX_FC","label":"Bill of exchange tax","type":"string"},{"name":"LC_COL_CHG","label":"LC collection charge","type":"string"},{"name":"COLL_CHARG","label":"Collection charge","type":"string"},{"name":"CHGS_TX_CD","label":"Tax code [ CHGS_TX_CD ]","type":"string"},{"name":"ISSUE_DATE","label":"Issue date","type":"date"},{"name":"USAGEDATE","label":"Used on","type":"date"},{"name":"BILL_USAGE","label":"Planned usage","type":"string"},{"name":"DOMICILE","label":"Domicile","type":"string"},{"name":"DRAWER","label":"Drawer","type":"string"},{"name":"CTRBNK_LOC","label":"Cen bank loc","type":"string"},{"name":"DRAW_CITY1","label":"City of bill of exch drawer","type":"string"},{"name":"DRAWEE","label":"Drawee","type":"string"},{"name":"DRAW_CITY2","label":"City of b/exch drawee","type":"string"},{"name":"DISCT_DAYS","label":"Discount days","type":"string"},{"name":"DISCT_RATE","label":"Discnt rate","type":"string"},{"name":"ACCEPTED","label":"Bill of exch accepted","type":"string"},{"name":"BILLSTATUS","label":"Bill/exch status","type":"string"},{"name":"PRTEST_IND","label":"Bill protest ID","type":"string"},{"name":"BE_DEMAND","label":"Bill on demand","type":"string"},{"name":"OBJ_TYPE","label":"Reference procedure","type":"string"},{"name":"REF_DOC","label":"Reference document","type":"string"},{"name":"REF_ORG_UN","label":"Reference org unit","type":"string"},{"name":"REVERSAL_DOC","label":"Reversed with","type":"string"},{"name":"SP_GL_TYPE","label":"Sp G/L trans type","type":"string"},{"name":"NEG_POSTNG","label":"Negative posting","type":"string"},{"name":"REF_DOC_NO_LONG","label":"Reference [ REF_DOC_NO_LONG ]","type":"string"},{"name":"BILL_DOC","label":"Billing Document","type":"string"}],"name":"LINEITEMS","attributes":{"child_type":"object"},"label":"Line items [ LINEITEMS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b620431-cbcf-4e1c-962b-d9551e34f8d0"}}</value>
+        <variable display_value="Pending Payments">456fb5d81bd16c10d2cf7669cc4bcb52</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>27ddf361dbdebc10fdffa82dd396195a</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>67ddf361dbdebc10fdffa82dd396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <value/>
+        <variable display_value="Key date">328350c9db11a41072af56a4dc9619d2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>27ddf361dbdebc10fdffa82dd396195a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>a3ddf361dbdebc10fdffa82dd396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">b06fb5d81bd16c10d2cf7669cc4bcb2c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>27ddf361dbdebc10fdffa82dd396195a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>efddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <value>1000</value>
+        <variable display_value="Company Code">7c6fb5d81bd16c10d2cf7669cc4bcb35</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=27ddf361dbdebc10fdffa82dd396195a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>COMPANYCODE</field>
+        <id>27ddf361dbdebc10fdffa82dd396195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>63ddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conn_alias</field>
+        <id>27ddf361dbdebc10fdffa82dd396195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>e7ddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>CUSTOMER</field>
+        <id>27ddf361dbdebc10fdffa82dd396195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>27ddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value>{{subflow.vendor.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_response</field>
+        <id>27ddf361dbdebc10fdffa82dd396195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>6fddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>KEYDATE</field>
+        <id>27ddf361dbdebc10fdffa82dd396195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:15</sys_created_on>
+        <sys_id>abddf361dbdebc10fdffa82dd396195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_706fb5d81bd16c10d2cf7669cc4bcb2b</table>
+        <value>{{subflow.date}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN5fddb361dbdebc10fdffa82dd39619e2,9bddb361dbdebc10fdffa82dd39619f4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>date</element>
+        <help/>
+        <hint/>
+        <label>date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:13</sys_created_on>
+        <sys_id>5fddb361dbdebc10fdffa82dd39619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vendor</element>
+        <help/>
+        <hint/>
+        <label>vendor</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>9bddb361dbdebc10fdffa82dd39619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2^sys_idNOT IN63ddf361dbdebc10fdffa82dd396192d,e3ddf361dbdebc10fdffa82dd396191b,e7ddf361dbdebc10fdffa82dd3961909"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_date</element>
+        <help/>
+        <hint/>
+        <label>SAP payment date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>63ddf361dbdebc10fdffa82dd396192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_amount</element>
+        <help/>
+        <hint/>
+        <label>SAP payment amount</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>e3ddf361dbdebc10fdffa82dd396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_payment_number</element>
+        <help/>
+        <hint/>
+        <label>SAP payment number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_97ddb361dbdebc10fdffa82dd39619c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 06:13:14</sys_created_on>
+        <sys_id>e7ddf361dbdebc10fdffa82dd3961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 06:13:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>7d0b37d0dbdef410fdffa82dd3961931</sys_id>
+        <latest_snapshot>97ddb361dbdebc10fdffa82dd39619c2</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

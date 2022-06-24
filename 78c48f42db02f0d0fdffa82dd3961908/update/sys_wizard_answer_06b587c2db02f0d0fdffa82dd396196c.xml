@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Purchase request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Purchase request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">e56db0c76d2220100acb70b3534330b7</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-20 05:09:12</sys_created_on>
+        <sys_id>06b587c2db02f0d0fdffa82dd396196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Purchase request</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_wizard_answer_06b587c2db02f0d0fdffa82dd396196c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-20 05:09:12</sys_updated_on>
+        <table/>
+        <target_url>x_snc_sap_a_p_au_0_purchase_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

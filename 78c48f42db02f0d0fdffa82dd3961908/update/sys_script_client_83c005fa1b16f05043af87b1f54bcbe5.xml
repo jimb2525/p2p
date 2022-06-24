@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>gross_invoice_amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Amounts not the same</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        var totalAmount = g_form.getValue('linked_po.total_amount');
+		g_form.addInfoMessage(totalAmount); 
+		var grossAmount = g_form.getValue('gross_invoice_amount');
+		g_form.addInfoMessage(grossAmount); 
+        if (totalAmount === grossAmount) {
+            g_form.showFieldMsg('gross_invoice_amount', 'Invoice amount matches PO amount');
+        }
+		else{
+			g_form.showFieldMsg('gross_invoice_amount', 'Invoice amount does not match PO amount!', 'error');
+		}
+    }
+
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 13:42:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83c005fa1b16f05043af87b1f54bcbe5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Amounts not the same</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_script_client_83c005fa1b16f05043af87b1f54bcbe5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 13:50:01</sys_updated_on>
+        <table>x_snc_sap_a_p_au_0_invoice</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

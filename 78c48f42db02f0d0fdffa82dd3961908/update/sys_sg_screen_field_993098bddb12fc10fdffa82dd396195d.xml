@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>vendor_contract</data_item_field_name>
+        <description_text/>
+        <description_text_field/>
+        <description_text_type/>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>700</order>
+        <record_id_field/>
+        <screen display_value="Details">a06e44f9db12fc10fdffa82dd3961927</screen>
+        <screen_data_item_table>x_snc_sap_a_p_au_0_purchase_order</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:33:22</sys_created_on>
+        <sys_id>993098bddb12fc10fdffa82dd396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>vendor_contract</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_sg_screen_field_993098bddb12fc10fdffa82dd396195d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 07:33:22</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_translated_text action="delete_multiple" query="documentkey=993098bddb12fc10fdffa82dd396195d"/>
+</record_update>

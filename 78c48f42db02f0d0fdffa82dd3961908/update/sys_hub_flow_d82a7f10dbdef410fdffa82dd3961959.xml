@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <compiler_build>glide-quebec-12-09-2020__patch9-hotfix3b-01-19-2022_02-02-2022_1523.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_goods_receipt_in_sap</internal_name>
+        <label_cache>[{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ee4a85f-f13b-430d-8475-cbc5b05e98fb"}},{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0ce02006-c664-447a-bd7c-8c20d2aaa40e"}},{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.output","label":"1➛Goods Receipt Data","reference_display":"Goods Receipt Data","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b76eca8c-c99c-4001-9d85-401084941e50"}},{"name":"subflow.po_record.opened_at","label":"Input➛PO Record➛Opened","reference":"","reference_display":"Opened","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_sap_a_p_au_0_purchase_order","column_name":"opened_at"},{"name":"subflow.po_record.created_po_number","label":"Input➛PO Record➛Created PO number","reference":"","reference_display":"Created PO number","type":"string","base_type":"string","parent_table_name":"x_snc_sap_a_p_au_0_purchase_order","column_name":"created_po_number"}]</label_cache>
+        <master_snapshot>d4e7d3a9dbdabc10fdffa82dd396199e</master_snapshot>
+        <name>Create goods receipt in SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:44:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d82a7f10dbdef410fdffa82dd3961959</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create goods receipt in SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_hub_flow_d82a7f10dbdef410fdffa82dd3961959</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 04:05:33</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d82a7f10dbdef410fdffa82dd3961959"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT INdc2a7f10dbdef410fdffa82dd396195a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d82a7f10dbdef410fdffa82dd3961959</id>
+        <name>Create goods receipt in SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:44:30</sys_created_on>
+        <sys_id>dc2a7f10dbdef410fdffa82dd396195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:44:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN8f5a3f50dbdef410fdffa82dd39619dc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e34743cb-cde4-46e5-915d-545372cce77a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_sap_a_p_au_0_purchase_order</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>po_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>PO Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create goods receipt in SAP">d82a7f10dbdef410fdffa82dd3961959</model>
+        <model_id>d82a7f10dbdef410fdffa82dd3961959</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_sap_a_p_au_0_purchase_order">x_snc_sap_a_p_au_0_purchase_order</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>8f5a3f50dbdef410fdffa82dd39619dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT INc35a3f50dbdef410fdffa82dd39619e9"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c308e01a-2cb0-45ff-bc42-39ab7af141ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_gr_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP GR Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create goods receipt in SAP">d82a7f10dbdef410fdffa82dd3961959</model>
+        <model_id>d82a7f10dbdef410fdffa82dd3961959</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>c35a3f50dbdef410fdffa82dd39619e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN935a7f50dbdef410fdffa82dd396190e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Goods Receipt">e49cedd51b270c10a2a9c91b1e4bcb6a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>e49cedd51b270c10a2a9c91b1e4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create goods receipt in SAP">d82a7f10dbdef410fdffa82dd3961959</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>935a7f50dbdef410fdffa82dd396190e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-02-23 12:42:04</sys_updated_on>
+        <ui_id>6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=935a7f50dbdef410fdffa82dd396190e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>935a7f50dbdef410fdffa82dd396190e</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>1b5a7f50dbdef410fdffa82dd3961911</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:15</sys_updated_on>
+        <value/>
+        <variable display_value="Material Document Items">c8c534921b515410d2cf7669cc4bcbdf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>935a7f50dbdef410fdffa82dd396190e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:15</sys_created_on>
+        <sys_id>4ce7d3a9dbdabc10fdffa82dd3961952</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 04:05:33</sys_updated_on>
+        <value>01</value>
+        <variable display_value="Transaction Code for Goods Movement">2c9cedd51b270c10a2a9c91b1e4bcb7f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>935a7f50dbdef410fdffa82dd396190e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>575a7f50dbdef410fdffa82dd3961911</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:15</sys_updated_on>
+        <value/>
+        <variable display_value="Material Document Header">649cedd51b270c10a2a9c91b1e4bcb79</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>935a7f50dbdef410fdffa82dd396190e</document_key>
+        <order>9</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>935a7f50dbdef410fdffa82dd3961911</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:54</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"MAT_DOC","label":"Material Document","type":"string"},{"name":"DOC_YEAR","label":"Material Doc Year","type":"string"}],"name":"GOODSMVT_HEADRET","label":"Material Document Number/Material Document Year [ GOODSMVT_HEADRET ]","type":"object"},{"name":"MATDOCUMENTYEAR","label":"Material Doc Year","type":"string"},{"name":"MATERIALDOCUMENT","label":"Material Document","type":"string"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONIN","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONIN ]","type":"array.object"},{"children":[{"name":"MATERIAL","label":"Material [ MATERIAL ]","type":"string"},{"name":"PLANT","label":"Plant","type":"string"},{"name":"STGE_LOC","label":"Storage location","type":"string"},{"name":"BATCH","label":"Batch","type":"string"},{"name":"MOVE_TYPE","label":"Movement type","type":"string"},{"name":"STCK_TYPE","label":"Stock Type","type":"string"},{"name":"SPEC_STOCK","label":"Special Stock","type":"string"},{"name":"VENDOR","label":"Vendor","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SALES_ORD","label":"Sales Order","type":"string"},{"name":"S_ORD_ITEM","label":"Sales order item [ S_ORD_ITEM ]","type":"string"},{"name":"SCHED_LINE","label":"Sales order schedule","type":"string"},{"name":"VAL_TYPE","label":"Valuation type","type":"string"},{"name":"ENTRY_QNT","label":"Qty in unit of entry","type":"string"},{"name":"ENTRY_UOM","label":"Unit of Entry","type":"string"},{"name":"ENTRY_UOM_ISO","label":"ISO code [ ENTRY_UOM_ISO ]","type":"string"},{"name":"PO_PR_QNT","label":"Qty in OPUn","type":"string"},{"name":"ORDERPR_UN","label":"Order Price Unit","type":"string"},{"name":"ORDERPR_UN_ISO","label":"ISO code [ ORDERPR_UN_ISO ]","type":"string"},{"name":"PO_NUMBER","label":"Purchase order","type":"string"},{"name":"PO_ITEM","label":"Item [ PO_ITEM ]","type":"string"},{"name":"SHIPPING","label":"Shipping Instr","type":"string"},{"name":"COMP_SHIP","label":"Compliance with Shipping Instr","type":"string"},{"name":"NO_MORE_GR","label":"Delivery Completed","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"GR_RCPT","label":"Goods recipient","type":"string"},{"name":"UNLOAD_PT","label":"Unloading Point","type":"string"},{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"ORDERID","label":"Order","type":"string"},{"name":"ORDER_ITNO","label":"Order item number","type":"string"},{"name":"CALC_MOTIVE","label":"Accounting Indicator","type":"string"},{"name":"ASSET_NO","label":"Asset","type":"string"},{"name":"SUB_NUMBER","label":"Sub-number","type":"string"},{"name":"RESERV_NO","label":"Reservation","type":"string"},{"name":"RES_ITEM","label":"Item number of reservation","type":"string"},{"name":"RES_TYPE","label":"Record type","type":"string"},{"name":"WITHDRAWN","label":"Final issue","type":"string"},{"name":"MOVE_MAT","label":"Receiving Material [ MOVE_MAT ]","type":"string"},{"name":"MOVE_PLANT","label":"Receiving plant","type":"string"},{"name":"MOVE_STLOC","label":"Receiving stor loc","type":"string"},{"name":"MOVE_BATCH","label":"Receiving Batch","type":"string"},{"name":"MOVE_VAL_TYPE","label":"Val Type Tfr Batch","type":"string"},{"name":"MVT_IND","label":"Movement indicator","type":"string"},{"name":"MOVE_REAS","label":"Reason for Movement","type":"string"},{"name":"RL_EST_KEY","label":"Real Estate Key","type":"string"},{"name":"REF_DATE","label":"Reference date","type":"date"},{"name":"COST_OBJ","label":"Cost Object","type":"string"},{"name":"PROFIT_SEGM_NO","label":"Profitab Segmt No","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"WBS_ELEM","label":"WBS element [ WBS_ELEM ]","type":"string"},{"name":"NETWORK","label":"Network","type":"string"},{"name":"ACTIVITY","label":"Activity","type":"string"},{"name":"PART_ACCT","label":"Partner","type":"string"},{"name":"AMOUNT_LC","label":"Amount loc curr","type":"string"},{"name":"AMOUNT_SV","label":"Sales value","type":"string"},{"name":"REF_DOC_YR","label":"Fisc Year Ref Doc","type":"string"},{"name":"REF_DOC","label":"Reference Document","type":"string"},{"name":"REF_DOC_IT","label":"Reference Doc Item","type":"string"},{"name":"EXPIRYDATE","label":"SLED/BBD","type":"date"},{"name":"PROD_DATE","label":"Date of Manufacture","type":"date"},{"name":"FUND","label":"Fund","type":"string"},{"name":"FUNDS_CTR","label":"Funds center","type":"string"},{"name":"CMMT_ITEM","label":"Commitment item [ CMMT_ITEM ]","type":"string"},{"name":"VAL_SALES_ORD","label":"Sales order","type":"string"},{"name":"VAL_S_ORD_ITEM","label":"Sales order item [ VAL_S_ORD_ITEM ]","type":"string"},{"name":"VAL_WBS_ELEM","label":"WBS element [ VAL_WBS_ELEM ]","type":"string"},{"name":"GL_ACCOUNT","label":"G/L Account","type":"string"},{"name":"IND_PROPOSE_QUANX","label":"Ind default qty","type":"string"},{"name":"XSTOB","label":"Reversal Mvmnt Type","type":"string"},{"name":"EAN_UPC","label":"EAN/UPC","type":"string"},{"name":"DELIV_NUMB_TO_SEARCH","label":"Delivery [ DELIV_NUMB_TO_SEARCH ]","type":"string"},{"name":"DELIV_ITEM_TO_SEARCH","label":"Item [ DELIV_ITEM_TO_SEARCH ]","type":"string"},{"name":"SERIALNO_AUTO_NUMBERASSIGNMENT","label":"Serial no automatic","type":"string"},{"name":"VENDRBATCH","label":"Vendor Batch","type":"string"},{"name":"STGE_TYPE","label":"Storage Type [ STGE_TYPE ]","type":"string"},{"name":"STGE_BIN","label":"Storage Bin","type":"string"},{"name":"SU_PL_STCK_1","label":"SU to be Plcd Stock [ SU_PL_STCK_1 ]","type":"string"},{"name":"ST_UN_QTYY_1","label":"Placement Qty per SU [ ST_UN_QTYY_1 ]","type":"string"},{"name":"ST_UN_QTYY_1_ISO","label":"ISO code [ ST_UN_QTYY_1_ISO ]","type":"string"},{"name":"UNITTYPE_1","label":"Storage Unit Type [ UNITTYPE_1 ]","type":"string"},{"name":"SU_PL_STCK_2","label":"SU to be Plcd Stock [ SU_PL_STCK_2 ]","type":"string"},{"name":"ST_UN_QTYY_2","label":"Placement Qty per SU [ ST_UN_QTYY_2 ]","type":"string"},{"name":"ST_UN_QTYY_2_ISO","label":"ISO code [ ST_UN_QTYY_2_ISO ]","type":"string"},{"name":"UNITTYPE_2","label":"Storage Unit Type [ UNITTYPE_2 ]","type":"string"},{"name":"STGE_TYPE_PC","label":"Storage Type [ STGE_TYPE_PC ]","type":"string"},{"name":"STGE_BIN_PC","label":"Storage bin   [ STGE_BIN_PC ]","type":"string"},{"name":"NO_PST_CHGNT","label":"Do not create posting chge notice","type":"string"},{"name":"GR_NUMBER","label":"GR Number","type":"string"},{"name":"STGE_TYPE_ST","label":"Storage Type [ STGE_TYPE_ST ]","type":"string"},{"name":"STGE_BIN_ST","label":"Storage bin   [ STGE_BIN_ST ]","type":"string"},{"name":"MATDOC_TR_CANCEL","label":"Material document","type":"string"},{"name":"MATITEM_TR_CANCEL","label":"Item [ MATITEM_TR_CANCEL ]","type":"string"},{"name":"MATYEAR_TR_CANCEL","label":"Material Doc Year","type":"string"},{"name":"NO_TRANSFER_REQ","label":"No Transfer Requirmnt","type":"string"},{"name":"CO_BUSPROC","label":"Business Process","type":"string"},{"name":"ACTTYPE","label":"Activity Type","type":"string"},{"name":"SUPPL_VEND","label":"Supplying Vendor","type":"string"},{"name":"MATERIAL_EXTERNAL","label":"Material Number [ MATERIAL_EXTERNAL ]","type":"string"},{"name":"MATERIAL_GUID","label":"GUID (External) [ MATERIAL_GUID ]","type":"string"},{"name":"MATERIAL_VERSION","label":"Version Number [ MATERIAL_VERSION ]","type":"string"},{"name":"MOVE_MAT_EXTERNAL","label":"Material Number [ MOVE_MAT_EXTERNAL ]","type":"string"},{"name":"MOVE_MAT_GUID","label":"GUID (External) [ MOVE_MAT_GUID ]","type":"string"},{"name":"MOVE_MAT_VERSION","label":"Version Number [ MOVE_MAT_VERSION ]","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"TR_PART_BA","label":"Trading part BA","type":"string"},{"name":"PAR_COMPCO","label":"Clearing CoCode","type":"string"},{"name":"DELIV_NUMB","label":"Delivery [ DELIV_NUMB ]","type":"string"},{"name":"DELIV_ITEM","label":"Item [ DELIV_ITEM ]","type":"string"},{"name":"NB_SLIPS","label":"Number of GR Slips","type":"string"},{"name":"NB_SLIPSX","label":"Updated info user data field [ NB_SLIPSX ]","type":"string"},{"name":"GR_RCPTX","label":"Updated info user data field [ GR_RCPTX ]","type":"string"},{"name":"UNLOAD_PTX","label":"Updated info user data field [ UNLOAD_PTX ]","type":"string"},{"name":"SPEC_MVMT","label":"Special movement","type":"string"},{"name":"GRANT_NBR","label":"Grant","type":"string"},{"name":"CMMT_ITEM_LONG","label":"Commitment item [ CMMT_ITEM_LONG ]","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"LINE_ID","label":"Identification","type":"string"},{"name":"PARENT_ID","label":"Parent line ID","type":"string"},{"name":"LINE_DEPTH","label":"Hierarchy level","type":"string"},{"name":"QUANTITY","label":"Quantity","type":"string"},{"name":"BASE_UOM","label":"Base Unit of Measure","type":"string"},{"name":"LONGNUM","label":"Smart Number","type":"string"},{"name":"BUDGET_PERIOD","label":"Budget Period","type":"string"},{"name":"EARMARKED_NUMBER","label":"Earmarked Funds","type":"string"},{"name":"EARMARKED_ITEM","label":"Document item","type":"string"},{"name":"STK_SEGMENT","label":"Stock Segment","type":"string"},{"name":"MOVE_SEGMENT","label":"Rec Stock Segment","type":"string"},{"name":"MATERIAL_LONG","label":"Material [ MATERIAL_LONG ]","type":"string"},{"name":"MOVE_MAT_LONG","label":"Receiving Material [ MOVE_MAT_LONG ]","type":"string"}],"name":"GOODSMVT_ITEM","attributes":{"child_type":"object"},"label":"Material Document Items [ GOODSMVT_ITEM ]","type":"array.object"},{"children":[{"name":"MATDOC_ITM","label":"Material Doc Item","type":"string"},{"name":"SERIALNO","label":"Serial Number","type":"string"},{"name":"UII","label":"Unique Item Identifier","type":"string"}],"name":"GOODSMVT_SERIALNUMBER","attributes":{"child_type":"object"},"label":"Serial Number [ GOODSMVT_SERIALNUMBER ]","type":"array.object"},{"children":[{"name":"LINE_ID","label":"Identification","type":"string"},{"name":"RET_AUTH_NUMBER","label":"RMA Number","type":"string"},{"name":"DELIV_NUMBER","label":"Delivery","type":"string"},{"name":"DELIV_ITEM","label":"Item","type":"string"},{"name":"HU_NUMBER","label":"Handling Unit","type":"string"},{"name":"INSPOUT_GUID","label":"EWM Inspection GUID","type":"string"},{"name":"EVENT","label":"Logical time","type":"string"},{"name":"DATE","label":"Date","type":"date"},{"name":"TIME","label":"Time","type":"string"},{"name":"ZONLO","label":"Time Zone","type":"string"},{"name":"TIMESTAMP","label":"UTC start","type":"string"},{"name":"SCRAP_INDICATOR","label":"Scrap Indicator for EWM","type":"string"},{"name":"KEEP_QUANTITY","label":"Retention Quantity for Scrapping Process","type":"string"},{"name":"GTS_STOCK_TYPE","label":"GTS Stock Type [ GTS_STOCK_TYPE ]","type":"string"},{"name":"MOVE_GTS_STOCK_TYPE","label":"GTS Stock Type [ MOVE_GTS_STOCK_TYPE ]","type":"string"},{"name":"KEEP_QUANTITY_CONVERSION","label":"No conversion","type":"string"},{"name":"ZERO_QUANTITY","label":"Allow Zero Quantity?","type":"string"},{"name":"NUMERATOR","label":"Numerator","type":"string"},{"name":"DENOMINATR","label":"Denominator","type":"string"},{"name":"INSP_DOC_NUMB","label":"Inspection Document No","type":"string"},{"name":"PCHG_TYPE","label":"Reference type","type":"string"}],"name":"GOODSMVT_SERV_PART_DATA","attributes":{"child_type":"object"},"label":"GOODSMVT_SERV_PART_DATA","type":"array.object"},{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"ID","label":"Message Class","type":"string"},{"name":"NUMBER","label":"Message number","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"},{"name":"PARAMETER","label":"Parameter Name","type":"string"},{"name":"ROW","label":"Lines in parameter","type":"integer"},{"name":"FIELD","label":"Field name","type":"string"},{"name":"SYSTEM","label":"Logical system (source of message)","type":"string"}],"name":"RETURN","attributes":{"child_type":"object"},"label":"Return Messages [ RETURN ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b76eca8c-c99c-4001-9d85-401084941e50"}}</value>
+        <variable display_value="Goods Receipt Data">325bb6911b6b0c10a2a9c91b1e4bcbf3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>935a7f50dbdef410fdffa82dd396190e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>db5a7f50dbdef410fdffa82dd3961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">a89cedd51b270c10a2a9c91b1e4bcb6f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=935a7f50dbdef410fdffa82dd396190e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conn_alias</field>
+        <id>935a7f50dbdef410fdffa82dd396190e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>135a7f50dbdef410fdffa82dd3961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_output</field>
+        <id>935a7f50dbdef410fdffa82dd396190e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>d75a7f50dbdef410fdffa82dd3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GM_CODE</field>
+        <id>935a7f50dbdef410fdffa82dd396190e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:15</sys_created_on>
+        <sys_id>8ce7d3a9dbdabc10fdffa82dd3961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GOODSMVT_HEADER</field>
+        <id>935a7f50dbdef410fdffa82dd396190e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>9b5a7f50dbdef410fdffa82dd3961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value>{"version":"1.0","complexObject":{"BILL_OF_LADING_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"HEADER_TXT":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"PR_UNAME":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"PSTNG_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"BILL_OF_LADING":{"$cv":{"$c":"java.lang.String","$v":""}},"BAR_CODE":{"$cv":{"$c":"java.lang.String","$v":""}},"VER_GR_GI_SLIPX":{"$cv":{"$c":"java.lang.String","$v":""}},"GR_GI_SLIP_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"VER_GR_GI_SLIP":{"$cv":{"$c":"java.lang.String","$v":""}},"EXT_WMS":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_DATE":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD7eb5c494fc21101032bf33b7050f08b2":{"BILL_OF_LADING_LONG":"String","BILL_OF_LADING_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bill of Lading [ BILL_OF_LADING_LONG ]\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"HEADER_TXT":"String","HEADER_TXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Header Text\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"REF_DOC_NO_LONG":"String","REF_DOC_NO_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference [ REF_DOC_NO_LONG ]\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"PR_UNAME":"String","PR_UNAME.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"User Name\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"REF_DOC_NO":"String","REF_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"REF_DOC_NO\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Reference [ REF_DOC_NO ]\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"},"PSTNG_DATE":"String","PSTNG_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"mapped\":\"{\\\"PSTNG_DATE\\\":\\\"{{subflow.po_record.opened_at}}\\\"}\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"10\"}"},"BILL_OF_LADING":"String","BILL_OF_LADING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bill of Lading [ BILL_OF_LADING ]\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"BAR_CODE":"String","BAR_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bar code\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"VER_GR_GI_SLIPX":"String","VER_GR_GI_SLIPX.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Updated info. user data field\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"GR_GI_SLIP_NO":"String","GR_GI_SLIP_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Goods Receipt/Issue Slip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"VER_GR_GI_SLIP":"String","VER_GR_GI_SLIP.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Print Version\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"EXT_WMS":"String","EXT_WMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Ext. WMS control\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"DOC_DATE":"String","DOC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Date\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"10\"}"}},"FlowDesigner:FD7eb5c494fc21101032bf33b7050f08b2.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7eb5c494fc21101032bf33b7050f08b2\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Material Document Header\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"65000\",\"uiUniqueId\":\"31650a06-539e-4f77-a21a-3af84460a042\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GOODSMVT_ITEM</field>
+        <id>935a7f50dbdef410fdffa82dd396190e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>5f5a7f50dbdef410fdffa82dd3961910</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 04:05:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value>{"version":"1.0","complexObject":{"name$":"FD3ab5c4947021101027d6c3fd3bfd5cb4","$COCollectionField":[{"PLANT":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"MOVE_TYPE":{"$cv":{"$c":"java.lang.String","$v":"101"}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"ENTRY_QNT":{"$cv":{"$c":"java.lang.String","$v":"1"}},"MVT_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VENDOR":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"STGE_LOC":{"$cv":{"$c":"java.lang.String","$v":"0001"}},"MATERIAL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4":{"$COCollectionField":[{"item":{"PLANT":"String","PLANT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Plant\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"MOVE_TYPE":"String","MOVE_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].PO_NUMBER\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ENTRY_QNT":"Number","ENTRY_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in unit of entry\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"MVT_IND":"String","MVT_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement indicator\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"VENDOR":"String","VENDOR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"STGE_LOC":"String","STGE_LOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage Location\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"MATERIAL":"String","MATERIAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Material\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959^sys_idNOT INc75a3f50dbdef410fdffa82dd39619e6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>po_record</element>
+        <help/>
+        <hint/>
+        <label>PO Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d82a7f10dbdef410fdffa82dd3961959</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>c75a3f50dbdef410fdffa82dd39619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN0f5a3f50dbdef410fdffa82dd39619f2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_gr_number</element>
+        <help/>
+        <hint/>
+        <label>SAP GR Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d82a7f10dbdef410fdffa82dd3961959</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:45:31</sys_created_on>
+        <sys_id>0f5a3f50dbdef410fdffa82dd39619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:45:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d82a7f10dbdef410fdffa82dd3961959^sys_idNOT IN05e717a9dbdabc10fdffa82dd396197f"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"05e717a9dbdabc10fdffa82dd396197f","name":"plan"}}</plan>
+        <plan_id display_value="Create goods receipt in SAP">d82a7f10dbdef410fdffa82dd3961959</plan_id>
+        <snapshot>1fae6f961b3d89107fdcca24164bcbf5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05e717a9dbdabc10fdffa82dd396197f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:58</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_goods_receipt_in_sap</internal_name>
+        <label_cache>[{"name":"subflow.po_record.created_po_number","label":"Input➛PO Record➛Created PO number","reference":"","reference_display":"Created PO number","type":"string","base_type":"string","parent_table_name":"x_snc_sap_a_p_au_0_purchase_order","column_name":"created_po_number"},{"name":"subflow.po_record.opened_at","label":"Input➛PO Record➛Opened","reference":"","reference_display":"Opened","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_sap_a_p_au_0_purchase_order","column_name":"opened_at"},{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.output","label":"1➛Goods Receipt Data","reference_display":"Goods Receipt Data","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b76eca8c-c99c-4001-9d85-401084941e50"}},{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0ce02006-c664-447a-bd7c-8c20d2aaa40e"}},{"name":"6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ee4a85f-f13b-430d-8475-cbc5b05e98fb"}}]</label_cache>
+        <master>true</master>
+        <name>Create goods receipt in SAP</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create goods receipt in SAP">d82a7f10dbdef410fdffa82dd3961959</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4e7d3a9dbdabc10fdffa82dd396199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:56</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d4e7d3a9dbdabc10fdffa82dd396199e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT INd8e7d3a9dbdabc10fdffa82dd396199f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d4e7d3a9dbdabc10fdffa82dd396199e</id>
+        <name>Create goods receipt in SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:16</sys_created_on>
+        <sys_id>d8e7d3a9dbdabc10fdffa82dd396199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN20e7d3a9dbdabc10fdffa82dd39619ba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e34743cb-cde4-46e5-915d-545372cce77a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_sap_a_p_au_0_purchase_order</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>po_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>PO Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create goods receipt in SAP">d4e7d3a9dbdabc10fdffa82dd396199e</model>
+        <model_id>d4e7d3a9dbdabc10fdffa82dd396199e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_sap_a_p_au_0_purchase_order">x_snc_sap_a_p_au_0_purchase_order</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:16</sys_created_on>
+        <sys_id>20e7d3a9dbdabc10fdffa82dd39619ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT INece7d3a9dbdabc10fdffa82dd39619f2"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c308e01a-2cb0-45ff-bc42-39ab7af141ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_gr_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP GR Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create goods receipt in SAP">d4e7d3a9dbdabc10fdffa82dd396199e</model>
+        <model_id>d4e7d3a9dbdabc10fdffa82dd396199e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>ece7d3a9dbdabc10fdffa82dd39619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT INe0e717a9dbdabc10fdffa82dd3961927"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Goods Receipt">e49cedd51b270c10a2a9c91b1e4bcb6a</action_type>
+        <action_type_parent display_value="Create Goods Receipt">5327f4551b630c10a2a9c91b1e4bcbc4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>e49cedd51b270c10a2a9c91b1e4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create goods receipt in SAP">d4e7d3a9dbdabc10fdffa82dd396199e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>e0e717a9dbdabc10fdffa82dd3961927</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:56</sys_updated_on>
+        <ui_id>6a0ab312-5ab3-41d0-8e46-2cf9d38f53fd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e0e717a9dbdabc10fdffa82dd3961927"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0e717a9dbdabc10fdffa82dd3961927</document_key>
+        <order>9</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>34e717a9dbdabc10fdffa82dd396192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:56</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"MAT_DOC","label":"Material Document","type":"string"},{"name":"DOC_YEAR","label":"Material Doc Year","type":"string"}],"name":"GOODSMVT_HEADRET","label":"Material Document Number/Material Document Year [ GOODSMVT_HEADRET ]","type":"object"},{"name":"MATDOCUMENTYEAR","label":"Material Doc Year","type":"string"},{"name":"MATERIALDOCUMENT","label":"Material Document","type":"string"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONIN","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONIN ]","type":"array.object"},{"children":[{"name":"MATERIAL","label":"Material [ MATERIAL ]","type":"string"},{"name":"PLANT","label":"Plant","type":"string"},{"name":"STGE_LOC","label":"Storage location","type":"string"},{"name":"BATCH","label":"Batch","type":"string"},{"name":"MOVE_TYPE","label":"Movement type","type":"string"},{"name":"STCK_TYPE","label":"Stock Type","type":"string"},{"name":"SPEC_STOCK","label":"Special Stock","type":"string"},{"name":"VENDOR","label":"Vendor","type":"string"},{"name":"CUSTOMER","label":"Customer","type":"string"},{"name":"SALES_ORD","label":"Sales Order","type":"string"},{"name":"S_ORD_ITEM","label":"Sales order item [ S_ORD_ITEM ]","type":"string"},{"name":"SCHED_LINE","label":"Sales order schedule","type":"string"},{"name":"VAL_TYPE","label":"Valuation type","type":"string"},{"name":"ENTRY_QNT","label":"Qty in unit of entry","type":"string"},{"name":"ENTRY_UOM","label":"Unit of Entry","type":"string"},{"name":"ENTRY_UOM_ISO","label":"ISO code [ ENTRY_UOM_ISO ]","type":"string"},{"name":"PO_PR_QNT","label":"Qty in OPUn","type":"string"},{"name":"ORDERPR_UN","label":"Order Price Unit","type":"string"},{"name":"ORDERPR_UN_ISO","label":"ISO code [ ORDERPR_UN_ISO ]","type":"string"},{"name":"PO_NUMBER","label":"Purchase order","type":"string"},{"name":"PO_ITEM","label":"Item [ PO_ITEM ]","type":"string"},{"name":"SHIPPING","label":"Shipping Instr","type":"string"},{"name":"COMP_SHIP","label":"Compliance with Shipping Instr","type":"string"},{"name":"NO_MORE_GR","label":"Delivery Completed","type":"string"},{"name":"ITEM_TEXT","label":"Text","type":"string"},{"name":"GR_RCPT","label":"Goods recipient","type":"string"},{"name":"UNLOAD_PT","label":"Unloading Point","type":"string"},{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"ORDERID","label":"Order","type":"string"},{"name":"ORDER_ITNO","label":"Order item number","type":"string"},{"name":"CALC_MOTIVE","label":"Accounting Indicator","type":"string"},{"name":"ASSET_NO","label":"Asset","type":"string"},{"name":"SUB_NUMBER","label":"Sub-number","type":"string"},{"name":"RESERV_NO","label":"Reservation","type":"string"},{"name":"RES_ITEM","label":"Item number of reservation","type":"string"},{"name":"RES_TYPE","label":"Record type","type":"string"},{"name":"WITHDRAWN","label":"Final issue","type":"string"},{"name":"MOVE_MAT","label":"Receiving Material [ MOVE_MAT ]","type":"string"},{"name":"MOVE_PLANT","label":"Receiving plant","type":"string"},{"name":"MOVE_STLOC","label":"Receiving stor loc","type":"string"},{"name":"MOVE_BATCH","label":"Receiving Batch","type":"string"},{"name":"MOVE_VAL_TYPE","label":"Val Type Tfr Batch","type":"string"},{"name":"MVT_IND","label":"Movement indicator","type":"string"},{"name":"MOVE_REAS","label":"Reason for Movement","type":"string"},{"name":"RL_EST_KEY","label":"Real Estate Key","type":"string"},{"name":"REF_DATE","label":"Reference date","type":"date"},{"name":"COST_OBJ","label":"Cost Object","type":"string"},{"name":"PROFIT_SEGM_NO","label":"Profitab Segmt No","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"WBS_ELEM","label":"WBS element [ WBS_ELEM ]","type":"string"},{"name":"NETWORK","label":"Network","type":"string"},{"name":"ACTIVITY","label":"Activity","type":"string"},{"name":"PART_ACCT","label":"Partner","type":"string"},{"name":"AMOUNT_LC","label":"Amount loc curr","type":"string"},{"name":"AMOUNT_SV","label":"Sales value","type":"string"},{"name":"REF_DOC_YR","label":"Fisc Year Ref Doc","type":"string"},{"name":"REF_DOC","label":"Reference Document","type":"string"},{"name":"REF_DOC_IT","label":"Reference Doc Item","type":"string"},{"name":"EXPIRYDATE","label":"SLED/BBD","type":"date"},{"name":"PROD_DATE","label":"Date of Manufacture","type":"date"},{"name":"FUND","label":"Fund","type":"string"},{"name":"FUNDS_CTR","label":"Funds center","type":"string"},{"name":"CMMT_ITEM","label":"Commitment item [ CMMT_ITEM ]","type":"string"},{"name":"VAL_SALES_ORD","label":"Sales order","type":"string"},{"name":"VAL_S_ORD_ITEM","label":"Sales order item [ VAL_S_ORD_ITEM ]","type":"string"},{"name":"VAL_WBS_ELEM","label":"WBS element [ VAL_WBS_ELEM ]","type":"string"},{"name":"GL_ACCOUNT","label":"G/L Account","type":"string"},{"name":"IND_PROPOSE_QUANX","label":"Ind default qty","type":"string"},{"name":"XSTOB","label":"Reversal Mvmnt Type","type":"string"},{"name":"EAN_UPC","label":"EAN/UPC","type":"string"},{"name":"DELIV_NUMB_TO_SEARCH","label":"Delivery [ DELIV_NUMB_TO_SEARCH ]","type":"string"},{"name":"DELIV_ITEM_TO_SEARCH","label":"Item [ DELIV_ITEM_TO_SEARCH ]","type":"string"},{"name":"SERIALNO_AUTO_NUMBERASSIGNMENT","label":"Serial no automatic","type":"string"},{"name":"VENDRBATCH","label":"Vendor Batch","type":"string"},{"name":"STGE_TYPE","label":"Storage Type [ STGE_TYPE ]","type":"string"},{"name":"STGE_BIN","label":"Storage Bin","type":"string"},{"name":"SU_PL_STCK_1","label":"SU to be Plcd Stock [ SU_PL_STCK_1 ]","type":"string"},{"name":"ST_UN_QTYY_1","label":"Placement Qty per SU [ ST_UN_QTYY_1 ]","type":"string"},{"name":"ST_UN_QTYY_1_ISO","label":"ISO code [ ST_UN_QTYY_1_ISO ]","type":"string"},{"name":"UNITTYPE_1","label":"Storage Unit Type [ UNITTYPE_1 ]","type":"string"},{"name":"SU_PL_STCK_2","label":"SU to be Plcd Stock [ SU_PL_STCK_2 ]","type":"string"},{"name":"ST_UN_QTYY_2","label":"Placement Qty per SU [ ST_UN_QTYY_2 ]","type":"string"},{"name":"ST_UN_QTYY_2_ISO","label":"ISO code [ ST_UN_QTYY_2_ISO ]","type":"string"},{"name":"UNITTYPE_2","label":"Storage Unit Type [ UNITTYPE_2 ]","type":"string"},{"name":"STGE_TYPE_PC","label":"Storage Type [ STGE_TYPE_PC ]","type":"string"},{"name":"STGE_BIN_PC","label":"Storage bin   [ STGE_BIN_PC ]","type":"string"},{"name":"NO_PST_CHGNT","label":"Do not create posting chge notice","type":"string"},{"name":"GR_NUMBER","label":"GR Number","type":"string"},{"name":"STGE_TYPE_ST","label":"Storage Type [ STGE_TYPE_ST ]","type":"string"},{"name":"STGE_BIN_ST","label":"Storage bin   [ STGE_BIN_ST ]","type":"string"},{"name":"MATDOC_TR_CANCEL","label":"Material document","type":"string"},{"name":"MATITEM_TR_CANCEL","label":"Item [ MATITEM_TR_CANCEL ]","type":"string"},{"name":"MATYEAR_TR_CANCEL","label":"Material Doc Year","type":"string"},{"name":"NO_TRANSFER_REQ","label":"No Transfer Requirmnt","type":"string"},{"name":"CO_BUSPROC","label":"Business Process","type":"string"},{"name":"ACTTYPE","label":"Activity Type","type":"string"},{"name":"SUPPL_VEND","label":"Supplying Vendor","type":"string"},{"name":"MATERIAL_EXTERNAL","label":"Material Number [ MATERIAL_EXTERNAL ]","type":"string"},{"name":"MATERIAL_GUID","label":"GUID (External) [ MATERIAL_GUID ]","type":"string"},{"name":"MATERIAL_VERSION","label":"Version Number [ MATERIAL_VERSION ]","type":"string"},{"name":"MOVE_MAT_EXTERNAL","label":"Material Number [ MOVE_MAT_EXTERNAL ]","type":"string"},{"name":"MOVE_MAT_GUID","label":"GUID (External) [ MOVE_MAT_GUID ]","type":"string"},{"name":"MOVE_MAT_VERSION","label":"Version Number [ MOVE_MAT_VERSION ]","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"TR_PART_BA","label":"Trading part BA","type":"string"},{"name":"PAR_COMPCO","label":"Clearing CoCode","type":"string"},{"name":"DELIV_NUMB","label":"Delivery [ DELIV_NUMB ]","type":"string"},{"name":"DELIV_ITEM","label":"Item [ DELIV_ITEM ]","type":"string"},{"name":"NB_SLIPS","label":"Number of GR Slips","type":"string"},{"name":"NB_SLIPSX","label":"Updated info user data field [ NB_SLIPSX ]","type":"string"},{"name":"GR_RCPTX","label":"Updated info user data field [ GR_RCPTX ]","type":"string"},{"name":"UNLOAD_PTX","label":"Updated info user data field [ UNLOAD_PTX ]","type":"string"},{"name":"SPEC_MVMT","label":"Special movement","type":"string"},{"name":"GRANT_NBR","label":"Grant","type":"string"},{"name":"CMMT_ITEM_LONG","label":"Commitment item [ CMMT_ITEM_LONG ]","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"LINE_ID","label":"Identification","type":"string"},{"name":"PARENT_ID","label":"Parent line ID","type":"string"},{"name":"LINE_DEPTH","label":"Hierarchy level","type":"string"},{"name":"QUANTITY","label":"Quantity","type":"string"},{"name":"BASE_UOM","label":"Base Unit of Measure","type":"string"},{"name":"LONGNUM","label":"Smart Number","type":"string"},{"name":"BUDGET_PERIOD","label":"Budget Period","type":"string"},{"name":"EARMARKED_NUMBER","label":"Earmarked Funds","type":"string"},{"name":"EARMARKED_ITEM","label":"Document item","type":"string"},{"name":"STK_SEGMENT","label":"Stock Segment","type":"string"},{"name":"MOVE_SEGMENT","label":"Rec Stock Segment","type":"string"},{"name":"MATERIAL_LONG","label":"Material [ MATERIAL_LONG ]","type":"string"},{"name":"MOVE_MAT_LONG","label":"Receiving Material [ MOVE_MAT_LONG ]","type":"string"}],"name":"GOODSMVT_ITEM","attributes":{"child_type":"object"},"label":"Material Document Items [ GOODSMVT_ITEM ]","type":"array.object"},{"children":[{"name":"MATDOC_ITM","label":"Material Doc Item","type":"string"},{"name":"SERIALNO","label":"Serial Number","type":"string"},{"name":"UII","label":"Unique Item Identifier","type":"string"}],"name":"GOODSMVT_SERIALNUMBER","attributes":{"child_type":"object"},"label":"Serial Number [ GOODSMVT_SERIALNUMBER ]","type":"array.object"},{"children":[{"name":"LINE_ID","label":"Identification","type":"string"},{"name":"RET_AUTH_NUMBER","label":"RMA Number","type":"string"},{"name":"DELIV_NUMBER","label":"Delivery","type":"string"},{"name":"DELIV_ITEM","label":"Item","type":"string"},{"name":"HU_NUMBER","label":"Handling Unit","type":"string"},{"name":"INSPOUT_GUID","label":"EWM Inspection GUID","type":"string"},{"name":"EVENT","label":"Logical time","type":"string"},{"name":"DATE","label":"Date","type":"date"},{"name":"TIME","label":"Time","type":"string"},{"name":"ZONLO","label":"Time Zone","type":"string"},{"name":"TIMESTAMP","label":"UTC start","type":"string"},{"name":"SCRAP_INDICATOR","label":"Scrap Indicator for EWM","type":"string"},{"name":"KEEP_QUANTITY","label":"Retention Quantity for Scrapping Process","type":"string"},{"name":"GTS_STOCK_TYPE","label":"GTS Stock Type [ GTS_STOCK_TYPE ]","type":"string"},{"name":"MOVE_GTS_STOCK_TYPE","label":"GTS Stock Type [ MOVE_GTS_STOCK_TYPE ]","type":"string"},{"name":"KEEP_QUANTITY_CONVERSION","label":"No conversion","type":"string"},{"name":"ZERO_QUANTITY","label":"Allow Zero Quantity?","type":"string"},{"name":"NUMERATOR","label":"Numerator","type":"string"},{"name":"DENOMINATR","label":"Denominator","type":"string"},{"name":"INSP_DOC_NUMB","label":"Inspection Document No","type":"string"},{"name":"PCHG_TYPE","label":"Reference type","type":"string"}],"name":"GOODSMVT_SERV_PART_DATA","attributes":{"child_type":"object"},"label":"GOODSMVT_SERV_PART_DATA","type":"array.object"},{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"ID","label":"Message Class","type":"string"},{"name":"NUMBER","label":"Message number","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"},{"name":"PARAMETER","label":"Parameter Name","type":"string"},{"name":"ROW","label":"Lines in parameter","type":"integer"},{"name":"FIELD","label":"Field name","type":"string"},{"name":"SYSTEM","label":"Logical system (source of message)","type":"string"}],"name":"RETURN","attributes":{"child_type":"object"},"label":"Return Messages [ RETURN ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b76eca8c-c99c-4001-9d85-401084941e50"}}</value>
+        <variable display_value="Goods Receipt Data">325bb6911b6b0c10a2a9c91b1e4bcbf3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0e717a9dbdabc10fdffa82dd3961927</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>b8e717a9dbdabc10fdffa82dd396192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 03:28:56</sys_updated_on>
+        <value>101</value>
+        <variable display_value="Transaction Code for Goods Movement">2c9cedd51b270c10a2a9c91b1e4bcb7f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0e717a9dbdabc10fdffa82dd3961927</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>f4e717a9dbdabc10fdffa82dd396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">a89cedd51b270c10a2a9c91b1e4bcb6f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0e717a9dbdabc10fdffa82dd3961927"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conn_alias</field>
+        <id>e0e717a9dbdabc10fdffa82dd3961927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>fce717a9dbdabc10fdffa82dd3961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_output</field>
+        <id>e0e717a9dbdabc10fdffa82dd3961927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>b4e717a9dbdabc10fdffa82dd3961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GM_CODE</field>
+        <id>e0e717a9dbdabc10fdffa82dd3961927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>b0e717a9dbdabc10fdffa82dd396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GOODSMVT_HEADER</field>
+        <id>e0e717a9dbdabc10fdffa82dd3961927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>78e717a9dbdabc10fdffa82dd3961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value>{"version":"1.0","complexObject":{"BILL_OF_LADING_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"HEADER_TXT":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"PR_UNAME":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"PSTNG_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"BILL_OF_LADING":{"$cv":{"$c":"java.lang.String","$v":""}},"BAR_CODE":{"$cv":{"$c":"java.lang.String","$v":""}},"VER_GR_GI_SLIPX":{"$cv":{"$c":"java.lang.String","$v":""}},"GR_GI_SLIP_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"VER_GR_GI_SLIP":{"$cv":{"$c":"java.lang.String","$v":""}},"EXT_WMS":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_DATE":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD7eb5c494fc21101032bf33b7050f08b2":{"BILL_OF_LADING_LONG":"String","BILL_OF_LADING_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bill of Lading [ BILL_OF_LADING_LONG ]\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"HEADER_TXT":"String","HEADER_TXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Header Text\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"REF_DOC_NO_LONG":"String","REF_DOC_NO_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference [ REF_DOC_NO_LONG ]\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"PR_UNAME":"String","PR_UNAME.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"User Name\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"REF_DOC_NO":"String","REF_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"REF_DOC_NO\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Reference [ REF_DOC_NO ]\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"},"PSTNG_DATE":"String","PSTNG_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"mapped\":\"{\\\"PSTNG_DATE\\\":\\\"{{subflow.po_record.opened_at}}\\\"}\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"10\"}"},"BILL_OF_LADING":"String","BILL_OF_LADING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bill of Lading [ BILL_OF_LADING ]\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"BAR_CODE":"String","BAR_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Bar code\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"VER_GR_GI_SLIPX":"String","VER_GR_GI_SLIPX.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Updated info. user data field\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"GR_GI_SLIP_NO":"String","GR_GI_SLIP_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Goods Receipt/Issue Slip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"VER_GR_GI_SLIP":"String","VER_GR_GI_SLIP.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Print Version\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"EXT_WMS":"String","EXT_WMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Ext. WMS control\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"DOC_DATE":"String","DOC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Date\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"10\"}"}},"FlowDesigner:FD7eb5c494fc21101032bf33b7050f08b2.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7eb5c494fc21101032bf33b7050f08b2\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Material Document Header\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"65000\",\"uiUniqueId\":\"31650a06-539e-4f77-a21a-3af84460a042\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>GOODSMVT_ITEM</field>
+        <id>e0e717a9dbdabc10fdffa82dd3961927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>3ce717a9dbdabc10fdffa82dd3961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e49cedd51b270c10a2a9c91b1e4bcb6a</table>
+        <value>{"version":"1.0","complexObject":{"name$":"FD3ab5c4947021101027d6c3fd3bfd5cb4","$COCollectionField":[{"PLANT":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"MOVE_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"ENTRY_QNT":{"$cv":{"$c":"java.lang.String","$v":"1"}},"MVT_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VENDOR":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"STGE_LOC":{"$cv":{"$c":"java.lang.String","$v":"0001"}},"MATERIAL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4":{"$COCollectionField":[{"item":{"PLANT":"String","PLANT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Plant\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"MOVE_TYPE":"String","MOVE_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].PO_NUMBER\\\":\\\"{{subflow.po_record.created_po_number}}\\\"}\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ENTRY_QNT":"Number","ENTRY_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in unit of entry\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"MVT_IND":"String","MVT_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Movement indicator\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"VENDOR":"String","VENDOR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"STGE_LOC":"String","STGE_LOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Storage Location\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"MATERIAL":"String","MATERIAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Material\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3ab5c4947021101027d6c3fd3bfd5cb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Items\",\"mandatory\":\"true\",\"child_name\":\"item\",\"uiUniqueId\":\"af3230b3-dc73-4f79-9ab0-9f9bc6de25d2\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3ab5c4947021101027d6c3fd3bfd5cb4\",\"child_label\":\"Doc Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2803c883-2bd0-4061-ab8b-c1ac028cd549\"}"}},"serializationFormat":"JSON"}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN2ce7d3a9dbdabc10fdffa82dd39619ec"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>po_record</element>
+        <help/>
+        <hint/>
+        <label>PO Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d4e7d3a9dbdabc10fdffa82dd396199e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>2ce7d3a9dbdabc10fdffa82dd39619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e^sys_idNOT IN20e717a9dbdabc10fdffa82dd3961902"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_gr_number</element>
+        <help/>
+        <hint/>
+        <label>SAP GR Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d4e7d3a9dbdabc10fdffa82dd396199e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 03:27:17</sys_created_on>
+        <sys_id>20e717a9dbdabc10fdffa82dd3961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 03:27:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>d82a7f10dbdef410fdffa82dd3961959</sys_id>
+        <latest_snapshot>d4e7d3a9dbdabc10fdffa82dd396199e</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

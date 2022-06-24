@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>sample SAP calls</description>
+        <internal_name>1__carmen_sample</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>1 - Carmen Sample</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2022-02-08 13:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6fe76a6d1badc95061cdba23164bcbf8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>1 - Carmen Sample</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_hub_flow_6fe76a6d1badc95061cdba23164bcbf8</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2022-02-08 13:21:51</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6fe76a6d1badc95061cdba23164bcbf8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6fe76a6d1badc95061cdba23164bcbf8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6fe76a6d1badc95061cdba23164bcbf8^sys_idNOT IN67e76a6d1badc95061cdba23164bcbfa"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6fe76a6d1badc95061cdba23164bcbf8</id>
+        <name>1 - Carmen Sample</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2022-02-08 13:21:51</sys_created_on>
+        <sys_id>67e76a6d1badc95061cdba23164bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2022-02-08 13:21:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

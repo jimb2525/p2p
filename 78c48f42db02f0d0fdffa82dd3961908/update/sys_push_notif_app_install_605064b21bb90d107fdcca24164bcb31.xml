@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2022-04-06 10:29:40</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>oscar.faura</sys_created_by>
+        <sys_created_on>2022-02-24 10:57:26</sys_created_on>
+        <sys_id>605064b21bb90d107fdcca24164bcb31</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>517D6AA347F48F307DA128D5FD6E8B6C3B5AE755971FEAEF71117846B2075DEB</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_605064b21bb90d107fdcca24164bcb31</sys_update_name>
+        <sys_updated_by>oscar.faura</sys_updated_by>
+        <sys_updated_on>2022-04-06 10:29:41</sys_updated_on>
+        <sys_user_id display_value="Oscar Faura">760226591b19811043af87b1f54bcb3f</sys_user_id>
+        <token>517D6AA347F48F307DA128D5FD6E8B6C3B5AE755971FEAEF71117846B2075DEB</token>
+    </sys_push_notif_app_install>
+</record_update>

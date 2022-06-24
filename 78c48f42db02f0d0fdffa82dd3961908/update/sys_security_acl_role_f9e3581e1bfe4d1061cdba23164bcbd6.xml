@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-13 13:49:01</sys_created_on>
+        <sys_id>f9e3581e1bfe4d1061cdba23164bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_sap_a_p_au_0_payment.snc_internal</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_security_acl display_value="x_snc_sap_a_p_au_0_payment">b5e3581e1bfe4d1061cdba23164bcbd5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f9e3581e1bfe4d1061cdba23164bcbd6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-13 13:49:01</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>ade3945a1bfe4d1061cdba23164bcb66</transaction_id>
+    </sys_security_acl_role>
+</record_update>

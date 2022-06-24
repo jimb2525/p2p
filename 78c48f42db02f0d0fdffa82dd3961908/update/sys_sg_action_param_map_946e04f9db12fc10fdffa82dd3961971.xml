@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Payment)">906e04f9db12fc10fdffa82dd396192e</button>
+        <item_parameter display_value="Payment cmdb_ci">dc6e04f9db12fc10fdffa82dd396192c</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:25:23</sys_created_on>
+        <sys_id>946e04f9db12fc10fdffa82dd3961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dc6e04f9db12fc10fdffa82dd396192c</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_946e04f9db12fc10fdffa82dd3961971</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 07:25:23</sys_updated_on>
+        <ui_parameter display_value="Configuration item">1c6e04f9db12fc10fdffa82dd396196f</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

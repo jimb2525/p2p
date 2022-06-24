@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="INSERT_OR_UPDATE">
+        <cs_topic_id display_value="Change vendor details">130c75341b2e7c5043af87b1f54bcbee</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"variable_name":"vendor","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_intent>Change vendor details</nlu_intent>
+        <nlu_intent_label>Change vendor details</nlu_intent_label>
+        <nlu_model>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</nlu_model>
+        <nlu_model_label>Purchasing</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 23:06:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>db0cb5341b2e7c5043af87b1f54bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_cs_topic_language_db0cb5341b2e7c5043af87b1f54bcb04</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 23:06:20</sys_updated_on>
+    </sys_cs_topic_language>
+</record_update>

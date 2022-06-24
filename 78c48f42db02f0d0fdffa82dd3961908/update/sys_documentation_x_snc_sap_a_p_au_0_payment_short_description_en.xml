@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="short_description" label="Agent notes" language="en" table="x_snc_sap_a_p_au_0_payment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <help/>
+            <hint/>
+            <label>Agent notes</label>
+            <language>en</language>
+            <name>x_snc_sap_a_p_au_0_payment</name>
+            <plural>Agent notes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-02 12:53:34</sys_created_on>
+            <sys_id>cbac635e1b1a705043af87b1f54bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Agent notes</sys_name>
+            <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_sap_a_p_au_0_payment_short_description_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-02 12:53:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

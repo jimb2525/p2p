@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type display_value="SAP Integration">f5616b5ddb167c10fdffa82dd396192d</activity_type>
+        <badge/>
+        <category/>
+        <description/>
+        <input_display_preferences/>
+        <inputs/>
+        <label>Create PO in SAP</label>
+        <name>create_po_in_sap</name>
+        <source>b869bfdcdb9ef410fdffa82dd396192f</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-30 09:30:16</sys_created_on>
+        <sys_id>72012f1ddb167c10fdffa82dd39619b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create PO in SAP</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_72012f1ddb167c10fdffa82dd39619b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-30 09:32:14</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=72012f1ddb167c10fdffa82dd39619b1"/>
+</record_update>

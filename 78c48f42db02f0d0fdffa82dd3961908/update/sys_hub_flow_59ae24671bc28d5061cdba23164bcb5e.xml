@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>purchase_order</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Purchase Order</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-11 06:11:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59ae24671bc28d5061cdba23164bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Purchase Order</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_hub_flow_59ae24671bc28d5061cdba23164bcb5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-11 06:11:10</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59ae24671bc28d5061cdba23164bcb5e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=59ae24671bc28d5061cdba23164bcb5e^sys_idNOT INd9aea4671bc28d5061cdba23164bcbaa"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>59ae24671bc28d5061cdba23164bcb5e</id>
+        <name>Purchase Order</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-11 06:11:10</sys_created_on>
+        <sys_id>d9aea4671bc28d5061cdba23164bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-11 06:11:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

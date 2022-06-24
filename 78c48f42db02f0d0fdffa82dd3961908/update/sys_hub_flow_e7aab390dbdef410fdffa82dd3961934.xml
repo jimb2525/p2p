@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <compiler_build>glide-quebec-12-09-2020__patch9-hotfix3b-01-19-2022_02-02-2022_1523.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_invoice_in_sap</internal_name>
+        <label_cache>[{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85a135cb-39b5-460c-a08d-52f26aed5861"}},{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9b8d8087-ca14-4f2b-afba-c2b606832649"}},{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.output","label":"1➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63586b3a-fa5c-4abd-a5d2-045f5cdca1fe"}}]</label_cache>
+        <master_snapshot>1cd9bba9db9ebc10fdffa82dd3961923</master_snapshot>
+        <name>Create invoice in SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:46:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7aab390dbdef410fdffa82dd3961934</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create invoice in SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_hub_flow_e7aab390dbdef410fdffa82dd3961934</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:35</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7aab390dbdef410fdffa82dd3961934"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e7aab390dbdef410fdffa82dd3961934"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e7aab390dbdef410fdffa82dd3961934^sys_idNOT INebaab390dbdef410fdffa82dd3961935"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e7aab390dbdef410fdffa82dd3961934</id>
+        <name>Create invoice in SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:46:54</sys_created_on>
+        <sys_id>ebaab390dbdef410fdffa82dd3961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:46:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e7aab390dbdef410fdffa82dd3961934^sys_idNOT IN2eeabf90dbdef410fdffa82dd39619c9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8f572aeb-f84b-4157-a498-174915712508</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_sap_a_p_au_0_purchase_order</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>po_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>PO record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create invoice in SAP">e7aab390dbdef410fdffa82dd3961934</model>
+        <model_id>e7aab390dbdef410fdffa82dd3961934</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7aab390dbdef410fdffa82dd3961934</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_sap_a_p_au_0_purchase_order">x_snc_sap_a_p_au_0_purchase_order</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:56</sys_created_on>
+        <sys_id>2eeabf90dbdef410fdffa82dd39619c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:47:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=e7aab390dbdef410fdffa82dd3961934^sys_idNOT IN62eabf90dbdef410fdffa82dd39619d6"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=07da2fef-ba72-4b39-840f-3d5c1ca22a75</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_invoice_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP invoice number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create invoice in SAP">e7aab390dbdef410fdffa82dd3961934</model>
+        <model_id>e7aab390dbdef410fdffa82dd3961934</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_e7aab390dbdef410fdffa82dd3961934</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:56</sys_created_on>
+        <sys_id>62eabf90dbdef410fdffa82dd39619d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:47:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e7aab390dbdef410fdffa82dd3961934^sys_idNOT INbaeabf90dbdef410fdffa82dd39619fa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Invoice">ef3fa05e1b2384101793319acd4bcbf3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ef3fa05e1b2384101793319acd4bcbf3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create invoice in SAP">e7aab390dbdef410fdffa82dd3961934</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:57</sys_created_on>
+        <sys_id>baeabf90dbdef410fdffa82dd39619fa</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-02-23 14:46:03</sys_updated_on>
+        <ui_id>462b639f-2d97-4ebd-8ee5-9a834b4af2f4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=baeabf90dbdef410fdffa82dd39619fa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>baeabf90dbdef410fdffa82dd39619fa</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:57</sys_created_on>
+        <sys_id>3aeabf90dbdef410fdffa82dd39619fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:31</sys_updated_on>
+        <value>{"children":[],"type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63586b3a-fa5c-4abd-a5d2-045f5cdca1fe"}}</value>
+        <variable display_value="Invoice Details">bf3fe05e1b2384101793319acd4bcb40</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>baeabf90dbdef410fdffa82dd39619fa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:57</sys_created_on>
+        <sys_id>72eabf90dbdef410fdffa82dd39619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:47:57</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">b33fa05e1b2384101793319acd4bcbf9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>baeabf90dbdef410fdffa82dd39619fa</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:57</sys_created_on>
+        <sys_id>beeabf90dbdef410fdffa82dd39619fd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-30 13:23:15</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"INV_REF_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_CHECKDG":{"$cv":{"$c":"java.lang.String","$v":""}},"RET_DUE_PROP":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_PCT1":{"$cv":{"$c":"java.lang.String","$v":""}},"INVOICE_IND":{"$cv":{"$c":"java.lang.String","$v":"123"}},"J_1BNFTYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"PLANNING_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"PSTNG_DATE":{"$cv":{"$c":"java.lang.String","$v":"2021-08-05"}},"INV_REC_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_TYPE":{"$cv":{"$c":"java.lang.String","$v":"KZ"}},"INV_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":"5105600865"}},"DSCT_PCT2":{"$cv":{"$c":"java.lang.String","$v":""}},"PAYEE_PAYER":{"$cv":{"$c":"java.lang.String","$v":""}},"PMTMTHSUPL":{"$cv":{"$c":"java.lang.String","$v":""}},"COMP_CODE":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"IV_CATEGORY":{"$cv":{"$c":"java.lang.String","$v":""}},"BLINE_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"PMNT_BLOCK":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_TRAN":{"$cv":{"$c":"java.lang.String","$v":""}},"ALLOC_NMBR":{"$cv":{"$c":"java.lang.String","$v":""}},"PAYMT_REF":{"$cv":{"$c":"java.lang.String","$v":""}},"CURRENCY_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"SCBANK_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":""}},"BUSINESS_PLACE":{"$cv":{"$c":"java.lang.String","$v":""}},"DELIV_POSTING":{"$cv":{"$c":"java.lang.String","$v":""}},"LOT_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_SUB_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"EXCH_RATE":{"$cv":{"$c":"java.lang.String","$v":"1"}},"BLLSRV_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"SUPCOUNTRY":{"$cv":{"$c":"java.lang.String","$v":""}},"HEADER_TXT":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"FIXEDTERMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PLANNING_LEVEL":{"$cv":{"$c":"java.lang.String","$v":""}},"EXCH_RATE_V":{"$cv":{"$c":"java.lang.String","$v":"1"}},"HOUSEBANKID":{"$cv":{"$c":"java.lang.String","$v":""}},"NETTERMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PARTNER_BK":{"$cv":{"$c":"java.lang.String","$v":""}},"GROSS_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":"40"}},"DEL_COSTS_TAXJ":{"$cv":{"$c":"java.lang.String","$v":""}},"EU_TRIANG_DEAL":{"$cv":{"$c":"java.lang.String","$v":""}},"DEL_COSTS_TAXC":{"$cv":{"$c":"java.lang.String","$v":""}},"VAT_REG_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_DAYS2":{"$cv":{"$c":"java.lang.String","$v":""}},"PMNTTRMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PYMT_METH":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_DAYS1":{"$cv":{"$c":"java.lang.String","$v":""}},"CURRENCY":{"$cv":{"$c":"java.lang.String","$v":"EUR"}},"REPCOUNTRY":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_TEXT":{"$cv":{"$c":"java.lang.String","$v":""}},"TAX_EXCH_RATE":{"$cv":{"$c":"java.lang.String","$v":""}},"GOODS_AFFECTED":{"$cv":{"$c":"java.lang.String","$v":""}},"PERSON_EXT":{"$cv":{"$c":"java.lang.String","$v":""}},"DIFF_INV":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_REF_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_YEAR":{"$cv":{"$c":"java.lang.String","$v":""}},"SIMULATION":{"$cv":{"$c":"java.lang.String","$v":""}},"RETURN_POSTING":{"$cv":{"$c":"java.lang.String","$v":""}},"CALC_TAX_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"BUS_AREA":{"$cv":{"$c":"java.lang.String","$v":""}},"DEL_COSTS":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_DATE":{"$cv":{"$c":"java.lang.String","$v":"2021-08-05"}}},"complexObjectSchema":{"FlowDesigner:FDad8ff8648b2110101056b6e6f9e63571":{"INV_REF_NO":"String","INV_REF_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"InR.Reference number\",\"mandatory\":\"false\",\"order\":\"44\",\"max_length\":\"0\"}"},"PO_CHECKDG":"String","PO_CHECKDG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Check digit\",\"mandatory\":\"false\",\"order\":\"37\",\"max_length\":\"0\"}"},"RET_DUE_PROP":"String","RET_DUE_PROP.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Due Date for Retention (Default)\",\"mandatory\":\"false\",\"order\":\"60\",\"max_length\":\"10\"}"},"DSCT_PCT1":"Number","DSCT_PCT1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Disc.percent 1 [ DSCT_PCT1 ]\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"},"INVOICE_IND":"String","INVOICE_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"J_1BNFTYPE":"String","J_1BNFTYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Nota fiscal type\",\"mandatory\":\"false\",\"order\":\"53\",\"max_length\":\"0\"}"},"PLANNING_DATE":"String","PLANNING_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Planning Date\",\"mandatory\":\"false\",\"order\":\"48\",\"max_length\":\"10\"}"},"PSTNG_DATE":"String","PSTNG_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"10\"}"},"INV_REC_DATE":"String","INV_REC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice receipt date\",\"mandatory\":\"false\",\"order\":\"46\",\"max_length\":\"10\"}"},"DOC_TYPE":"String","DOC_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document type\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\"}"},"INV_DOC_NO":"String","INV_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice Document No.\",\"mandatory\":\"false\",\"order\":\"30\",\"max_length\":\"0\"}"},"DSCT_PCT2":"Number","DSCT_PCT2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Disc.percent 1 [ DSCT_PCT2 ]\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\"}"},"PAYEE_PAYER":"String","PAYEE_PAYER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payee\",\"mandatory\":\"false\",\"order\":\"39\",\"max_length\":\"0\"}"},"PMTMTHSUPL":"String","PMTMTHSUPL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Pmt meth. supplement\",\"mandatory\":\"false\",\"order\":\"29\",\"max_length\":\"0\"}"},"COMP_CODE":"String","COMP_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Company Code\",\"mandatory\":\"true\",\"order\":\"6\",\"max_length\":\"0\"}"},"IV_CATEGORY":"String","IV_CATEGORY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"IV category\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\"}"},"BLINE_DATE":"String","BLINE_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Baseline Payment Dte\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"10\"}"},"PMNT_BLOCK":"String","PMNT_BLOCK.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment Block\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\"}"},"INV_TRAN":"String","INV_TRAN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Transaction\",\"mandatory\":\"false\",\"order\":\"63\",\"max_length\":\"0\"}"},"ALLOC_NMBR":"String","ALLOC_NMBR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Assignment\",\"mandatory\":\"false\",\"order\":\"42\",\"max_length\":\"0\"}"},"PAYMT_REF":"String","PAYMT_REF.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment reference\",\"mandatory\":\"false\",\"order\":\"43\",\"max_length\":\"0\"}"},"CURRENCY_ISO":"String","CURRENCY_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ISO Code\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"SCBANK_IND":"String","SCBANK_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"SCB Indicator\",\"mandatory\":\"false\",\"order\":\"31\",\"max_length\":\"0\"}"},"DSCT_AMOUNT":"String","DSCT_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Discount Amount\",\"mandatory\":\"false\",\"order\":\"35\",\"max_length\":\"0\"}"},"BUSINESS_PLACE":"String","BUSINESS_PLACE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Business place\",\"mandatory\":\"false\",\"order\":\"57\",\"max_length\":\"0\"}"},"DELIV_POSTING":"String","DELIV_POSTING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Delivery posting (Inv/Cr)\",\"mandatory\":\"false\",\"order\":\"61\",\"max_length\":\"0\"}"},"LOT_NUMBER":"String","LOT_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Lot number\",\"mandatory\":\"false\",\"order\":\"51\",\"max_length\":\"0\"}"},"PO_SUB_NO":"String","PO_SUB_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"PBC/POR number\",\"mandatory\":\"false\",\"order\":\"36\",\"max_length\":\"0\"}"},"EXCH_RATE":"Number","EXCH_RATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Direct quoted exchange rate\",\"mandatory\":\"true\",\"order\":\"10\",\"max_length\":\"0\"}"},"BLLSRV_IND":"String","BLLSRV_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Service Indicator\",\"mandatory\":\"false\",\"order\":\"33\",\"max_length\":\"0\"}"},"SUPCOUNTRY":"String","SUPCOUNTRY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Supplying Cntry\",\"mandatory\":\"false\",\"order\":\"32\",\"max_length\":\"0\"}"},"HEADER_TXT":"String","HEADER_TXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Header Text\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\"}"},"REF_DOC_NO_LONG":"String","REF_DOC_NO_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference\",\"mandatory\":\"false\",\"order\":\"34\",\"max_length\":\"0\"}"},"FIXEDTERMS":"String","FIXEDTERMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Fixed\",\"mandatory\":\"false\",\"order\":\"49\",\"max_length\":\"0\"}"},"PLANNING_LEVEL":"String","PLANNING_LEVEL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Planning Level\",\"mandatory\":\"false\",\"order\":\"47\",\"max_length\":\"0\"}"},"EXCH_RATE_V":"Number","EXCH_RATE_V.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Indirect quoted exchange rate\",\"mandatory\":\"true\",\"order\":\"11\",\"max_length\":\"0\"}"},"HOUSEBANKID":"String","HOUSEBANKID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"House bank\",\"mandatory\":\"false\",\"order\":\"41\",\"max_length\":\"0\"}"},"NETTERMS":"Integer","NETTERMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days Net\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"PARTNER_BK":"String","PARTNER_BK.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Part.bank type\",\"mandatory\":\"false\",\"order\":\"40\",\"max_length\":\"0\"}"},"GROSS_AMOUNT":"String","GROSS_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Gross invoice amount\",\"mandatory\":\"true\",\"order\":\"12\",\"max_length\":\"0\"}"},"DEL_COSTS_TAXJ":"String","DEL_COSTS_TAXJ.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Jurisdiction code\",\"mandatory\":\"false\",\"order\":\"26\",\"max_length\":\"0\"}"},"EU_TRIANG_DEAL":"String","EU_TRIANG_DEAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"EU triangular deal\",\"mandatory\":\"false\",\"order\":\"54\",\"max_length\":\"0\"}"},"DEL_COSTS_TAXC":"String","DEL_COSTS_TAXC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax code del.costs\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\"}"},"VAT_REG_NO":"String","VAT_REG_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"VAT Registration No.\",\"mandatory\":\"false\",\"order\":\"56\",\"max_length\":\"0\"}"},"DSCT_DAYS2":"Integer","DSCT_DAYS2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days 2\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"PMNTTRMS":"String","PMNTTRMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Terms of Payment\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"PYMT_METH":"String","PYMT_METH.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment Method\",\"mandatory\":\"false\",\"order\":\"28\",\"max_length\":\"0\"}"},"DSCT_DAYS1":"Integer","DSCT_DAYS1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days 1\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"CURRENCY":"String","CURRENCY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Currency\",\"mandatory\":\"true\",\"order\":\"8\",\"max_length\":\"0\"}"},"REPCOUNTRY":"String","REPCOUNTRY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reporting country\",\"mandatory\":\"false\",\"order\":\"55\",\"max_length\":\"0\"}"},"ITEM_TEXT":"String","ITEM_TEXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Text\",\"mandatory\":\"false\",\"order\":\"52\",\"max_length\":\"0\"}"},"TAX_EXCH_RATE":"Number","TAX_EXCH_RATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Rate for taxes\",\"mandatory\":\"false\",\"order\":\"58\",\"max_length\":\"0\"}"},"GOODS_AFFECTED":"String","GOODS_AFFECTED.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Investment ID\",\"mandatory\":\"false\",\"order\":\"59\",\"max_length\":\"0\"}"},"PERSON_EXT":"String","PERSON_EXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Created by\",\"mandatory\":\"false\",\"order\":\"27\",\"max_length\":\"0\"}"},"DIFF_INV":"String","DIFF_INV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoicing Party\",\"mandatory\":\"true\",\"order\":\"7\",\"max_length\":\"0\"}"},"PO_REF_NO":"String","PO_REF_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"POR reference number\",\"mandatory\":\"false\",\"order\":\"38\",\"max_length\":\"0\"}"},"REF_DOC_NO":"String","REF_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"INV_YEAR":"String","INV_YEAR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Fiscal year\",\"mandatory\":\"false\",\"order\":\"45\",\"max_length\":\"0\"}"},"SIMULATION":"String","SIMULATION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Simulate Invoice\",\"mandatory\":\"false\",\"order\":\"64\",\"max_length\":\"0\"}"},"RETURN_POSTING":"String","RETURN_POSTING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Returns posting(in/cr)\",\"mandatory\":\"false\",\"order\":\"62\",\"max_length\":\"0\"}"},"CALC_TAX_IND":"String","CALC_TAX_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Calculate tax\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"BUS_AREA":"String","BUS_AREA.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Business Area\",\"mandatory\":\"false\",\"order\":\"50\",\"max_length\":\"0\"}"},"DEL_COSTS":"String","DEL_COSTS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Unplanned del. costs\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\"}"},"DOC_DATE":"String","DOC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Date\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"10\"}"}},"FlowDesigner:FDad8ff8648b2110101056b6e6f9e63571.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDad8ff8648b2110101056b6e6f9e63571\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Invoice Header\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"65000\",\"uiUniqueId\":\"bf2fd978-8296-41ec-bedb-fc4b5904cae0\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Invoice Header">3f3fe05e1b2384101793319acd4bcb1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>baeabf90dbdef410fdffa82dd39619fa</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:57</sys_created_on>
+        <sys_id>faeabf90dbdef410fdffa82dd39619fd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-30 13:23:14</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"name$":"FD698ff864e92110100075b8120ce3d173","$COCollectionField":[{"COND_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_IT":{"$cv":{"$c":"java.lang.String","$v":""}},"QUANTITY":{"$cv":{"$c":"java.lang.String","$v":"2"}},"RETENTION_PERCENTAGE":{"$cv":{"$c":"java.lang.String","$v":""}},"RETENTION_DOCU_CURRENCY":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC":{"$cv":{"$c":"java.lang.String","$v":""}},"GRIR_CLEAR_SRV":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_ITM_ORIGIN":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_YEAR":{"$cv":{"$c":"java.lang.String","$v":""}},"NO_RETENTION":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":"100"}},"SHEET_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"DE_CRE_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VALUATION_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"FREIGHT_VEN":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_PR_QNT":{"$cv":{"$c":"java.lang.String","$v":""}},"COND_COUNT":{"$cv":{"$c":"java.lang.String","$v":""}},"CSHDIS_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_TEXT":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_UNIT_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_PR_UOM_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_UNIT":{"$cv":{"$c":"java.lang.String","$v":""}},"INVOICE_DOC_ITEM":{"$cv":{"$c":"java.lang.String","$v":"100"}},"RETENTION_DUE_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_RELATION":{"$cv":{"$c":"java.lang.String","$v":""}},"COND_ST_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"FINAL_INV":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":"4500001032"}},"PO_PR_UOM":{"$cv":{"$c":"java.lang.String","$v":""}},"SHEET_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"TAXJURCODE":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":"20"}},"TAX_CODE":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD698ff864e92110100075b8120ce3d173":{"$COCollectionField":[{"item":{"COND_TYPE":"String","COND_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Condition type\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"REF_DOC_IT":"String","REF_DOC_IT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference Doc. Item\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"QUANTITY":"Number","QUANTITY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Quantity\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"RETENTION_PERCENTAGE":"Number","RETENTION_PERCENTAGE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Retention in Percent\",\"mandatory\":\"false\",\"order\":\"28\",\"max_length\":\"0\"}"},"RETENTION_DOCU_CURRENCY":"Number","RETENTION_DOCU_CURRENCY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Retention in Document Currency\",\"mandatory\":\"false\",\"order\":\"27\",\"max_length\":\"0\"}"},"REF_DOC":"String","REF_DOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference Document\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"GRIR_CLEAR_SRV":"String","GRIR_CLEAR_SRV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"GR/IR Clearing\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\"}"},"INV_ITM_ORIGIN":"String","INV_ITM_ORIGIN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Origin of an Invoice Item\",\"mandatory\":\"false\",\"order\":\"33\",\"max_length\":\"0\"}"},"REF_DOC_YEAR":"String","REF_DOC_YEAR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Year current period\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"NO_RETENTION":"String","NO_RETENTION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item Not Relevant to Retention\",\"mandatory\":\"false\",\"order\":\"30\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"SHEET_ITEM":"String","SHEET_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Line Number\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\"}"},"DE_CRE_IND":"String","DE_CRE_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Subseq. Debit/Credit\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"VALUATION_TYPE":"String","VALUATION_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Valuation Type\",\"mandatory\":\"false\",\"order\":\"31\",\"max_length\":\"0\"}"},"FREIGHT_VEN":"String","FREIGHT_VEN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\"}"},"PO_PR_QNT":"Number","PO_PR_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in OPUn\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"COND_COUNT":"String","COND_COUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Counter\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"},"CSHDIS_IND":"String","CSHDIS_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"W/o Cash Dscnt\",\"mandatory\":\"false\",\"order\":\"26\",\"max_length\":\"0\"}"},"ITEM_TEXT":"String","ITEM_TEXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Text\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\"}"},"PO_UNIT_ISO":"String","PO_UNIT_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order unit in ISO\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"PO_PR_UOM_ISO":"String","PO_PR_UOM_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Pur.Ord. PU ISO\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"PO_UNIT":"String","PO_UNIT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order Unit\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"INVOICE_DOC_ITEM":"String","INVOICE_DOC_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice Item\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"RETENTION_DUE_DATE":"String","RETENTION_DUE_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Due Date for Retention\",\"mandatory\":\"false\",\"order\":\"29\",\"max_length\":\"10\"}"},"INV_RELATION":"String","INV_RELATION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Grouping Char. for Invoice Verification\",\"mandatory\":\"false\",\"order\":\"32\",\"max_length\":\"0\"}"},"COND_ST_NO":"String","COND_ST_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Step number\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"FINAL_INV":"String","FINAL_INV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Final Invoice\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"PO_PR_UOM":"String","PO_PR_UOM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order Price Unit\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\"}"},"SHEET_NO":"String","SHEET_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Entry Sheet\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\"}"},"TAXJURCODE":"String","TAXJURCODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax Jurisdiction\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"ITEM_AMOUNT":"String","ITEM_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Amount\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"TAX_CODE":"String","TAX_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax Code\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Invoice Lines\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"e74a029a-f6bb-4778-8993-6ed7f865b029\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD698ff864e92110100075b8120ce3d173\",\"child_label\":\"Line\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bd219f5f-7e3e-4954-9024-f8fa2d28b3f0\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD698ff864e92110100075b8120ce3d173.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Invoice Lines\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"e74a029a-f6bb-4778-8993-6ed7f865b029\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD698ff864e92110100075b8120ce3d173\",\"child_label\":\"Line\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bd219f5f-7e3e-4954-9024-f8fa2d28b3f0\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Invoice Lines">f33fe05e1b2384101793319acd4bcb3a</variable>
+    </sys_variable_value>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e7aab390dbdef410fdffa82dd3961934^sys_idNOT IN66eabf90dbdef410fdffa82dd39619d3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>po_record</element>
+        <help/>
+        <hint/>
+        <label>PO record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7aab390dbdef410fdffa82dd3961934</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:56</sys_created_on>
+        <sys_id>66eabf90dbdef410fdffa82dd39619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:47:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e7aab390dbdef410fdffa82dd3961934^sys_idNOT INbaeabf90dbdef410fdffa82dd39619df"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_invoice_number</element>
+        <help/>
+        <hint/>
+        <label>SAP invoice number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e7aab390dbdef410fdffa82dd3961934</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 08:47:56</sys_created_on>
+        <sys_id>baeabf90dbdef410fdffa82dd39619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 08:47:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e7aab390dbdef410fdffa82dd3961934^sys_idNOT INb8d9fba9db9ebc10fdffa82dd396190a"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"b8d9fba9db9ebc10fdffa82dd396190a","name":"plan"}}</plan>
+        <plan_id display_value="Create invoice in SAP">e7aab390dbdef410fdffa82dd3961934</plan_id>
+        <snapshot>5b0b40a61bfd89107fdcca24164bcbbe</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8d9fba9db9ebc10fdffa82dd396190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:34</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="SAP AP Related">3159ffdcdb9ef410fdffa82dd396199c</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_invoice_in_sap</internal_name>
+        <label_cache>[{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85a135cb-39b5-460c-a08d-52f26aed5861"}},{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9b8d8087-ca14-4f2b-afba-c2b606832649"}},{"name":"462b639f-2d97-4ebd-8ee5-9a834b4af2f4.output","label":"1➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63586b3a-fa5c-4abd-a5d2-045f5cdca1fe"}}]</label_cache>
+        <master>true</master>
+        <name>Create invoice in SAP</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create invoice in SAP">e7aab390dbdef410fdffa82dd3961934</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1cd9bba9db9ebc10fdffa82dd3961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:32</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1cd9bba9db9ebc10fdffa82dd3961923"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1cd9bba9db9ebc10fdffa82dd3961923"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT IN10d9bba9db9ebc10fdffa82dd3961925"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1cd9bba9db9ebc10fdffa82dd3961923</id>
+        <name>Create invoice in SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:32</sys_created_on>
+        <sys_id>10d9bba9db9ebc10fdffa82dd3961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT INd4d9bba9db9ebc10fdffa82dd3961926"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8f572aeb-f84b-4157-a498-174915712508</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_sap_a_p_au_0_purchase_order</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>po_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>PO record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create invoice in SAP">1cd9bba9db9ebc10fdffa82dd3961923</model>
+        <model_id>1cd9bba9db9ebc10fdffa82dd3961923</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1cd9bba9db9ebc10fdffa82dd3961923</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_sap_a_p_au_0_purchase_order">x_snc_sap_a_p_au_0_purchase_order</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:32</sys_created_on>
+        <sys_id>d4d9bba9db9ebc10fdffa82dd3961926</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT IN18d9bba9db9ebc10fdffa82dd396195a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=07da2fef-ba72-4b39-840f-3d5c1ca22a75</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sap_invoice_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SAP invoice number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create invoice in SAP">1cd9bba9db9ebc10fdffa82dd3961923</model>
+        <model_id>1cd9bba9db9ebc10fdffa82dd3961923</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:32</sys_created_on>
+        <sys_id>18d9bba9db9ebc10fdffa82dd396195a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT INa0d9bba9db9ebc10fdffa82dd396198e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Invoice">ef3fa05e1b2384101793319acd4bcbf3</action_type>
+        <action_type_parent display_value="Create Invoice">4e083fca1b6f44101793319acd4bcbb5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ef3fa05e1b2384101793319acd4bcbf3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create invoice in SAP">1cd9bba9db9ebc10fdffa82dd3961923</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>a0d9bba9db9ebc10fdffa82dd396198e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <ui_id>462b639f-2d97-4ebd-8ee5-9a834b4af2f4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0d9bba9db9ebc10fdffa82dd396198e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0d9bba9db9ebc10fdffa82dd396198e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>20d9bba9db9ebc10fdffa82dd3961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">b33fa05e1b2384101793319acd4bcbf9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0d9bba9db9ebc10fdffa82dd396198e</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>6cd9bba9db9ebc10fdffa82dd3961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"INV_REF_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_CHECKDG":{"$cv":{"$c":"java.lang.String","$v":""}},"RET_DUE_PROP":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_PCT1":{"$cv":{"$c":"java.lang.String","$v":""}},"INVOICE_IND":{"$cv":{"$c":"java.lang.String","$v":"123"}},"J_1BNFTYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"PLANNING_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"PSTNG_DATE":{"$cv":{"$c":"java.lang.String","$v":"2021-08-05"}},"INV_REC_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_TYPE":{"$cv":{"$c":"java.lang.String","$v":"KZ"}},"INV_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":"5105600865"}},"DSCT_PCT2":{"$cv":{"$c":"java.lang.String","$v":""}},"PAYEE_PAYER":{"$cv":{"$c":"java.lang.String","$v":""}},"PMTMTHSUPL":{"$cv":{"$c":"java.lang.String","$v":""}},"COMP_CODE":{"$cv":{"$c":"java.lang.String","$v":"1000"}},"IV_CATEGORY":{"$cv":{"$c":"java.lang.String","$v":""}},"BLINE_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"PMNT_BLOCK":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_TRAN":{"$cv":{"$c":"java.lang.String","$v":""}},"ALLOC_NMBR":{"$cv":{"$c":"java.lang.String","$v":""}},"PAYMT_REF":{"$cv":{"$c":"java.lang.String","$v":""}},"CURRENCY_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"SCBANK_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":""}},"BUSINESS_PLACE":{"$cv":{"$c":"java.lang.String","$v":""}},"DELIV_POSTING":{"$cv":{"$c":"java.lang.String","$v":""}},"LOT_NUMBER":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_SUB_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"EXCH_RATE":{"$cv":{"$c":"java.lang.String","$v":"1"}},"BLLSRV_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"SUPCOUNTRY":{"$cv":{"$c":"java.lang.String","$v":""}},"HEADER_TXT":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO_LONG":{"$cv":{"$c":"java.lang.String","$v":""}},"FIXEDTERMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PLANNING_LEVEL":{"$cv":{"$c":"java.lang.String","$v":""}},"EXCH_RATE_V":{"$cv":{"$c":"java.lang.String","$v":"1"}},"HOUSEBANKID":{"$cv":{"$c":"java.lang.String","$v":""}},"NETTERMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PARTNER_BK":{"$cv":{"$c":"java.lang.String","$v":""}},"GROSS_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":"40"}},"DEL_COSTS_TAXJ":{"$cv":{"$c":"java.lang.String","$v":""}},"EU_TRIANG_DEAL":{"$cv":{"$c":"java.lang.String","$v":""}},"DEL_COSTS_TAXC":{"$cv":{"$c":"java.lang.String","$v":""}},"VAT_REG_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_DAYS2":{"$cv":{"$c":"java.lang.String","$v":""}},"PMNTTRMS":{"$cv":{"$c":"java.lang.String","$v":""}},"PYMT_METH":{"$cv":{"$c":"java.lang.String","$v":""}},"DSCT_DAYS1":{"$cv":{"$c":"java.lang.String","$v":""}},"CURRENCY":{"$cv":{"$c":"java.lang.String","$v":"EUR"}},"REPCOUNTRY":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_TEXT":{"$cv":{"$c":"java.lang.String","$v":""}},"TAX_EXCH_RATE":{"$cv":{"$c":"java.lang.String","$v":""}},"GOODS_AFFECTED":{"$cv":{"$c":"java.lang.String","$v":""}},"PERSON_EXT":{"$cv":{"$c":"java.lang.String","$v":""}},"DIFF_INV":{"$cv":{"$c":"java.lang.String","$v":"0000010006"}},"PO_REF_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_YEAR":{"$cv":{"$c":"java.lang.String","$v":""}},"SIMULATION":{"$cv":{"$c":"java.lang.String","$v":""}},"RETURN_POSTING":{"$cv":{"$c":"java.lang.String","$v":""}},"CALC_TAX_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"BUS_AREA":{"$cv":{"$c":"java.lang.String","$v":""}},"DEL_COSTS":{"$cv":{"$c":"java.lang.String","$v":""}},"DOC_DATE":{"$cv":{"$c":"java.lang.String","$v":"2021-08-05"}}},"complexObjectSchema":{"FlowDesigner:FDad8ff8648b2110101056b6e6f9e63571":{"INV_REF_NO":"String","INV_REF_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"InR.Reference number\",\"mandatory\":\"false\",\"order\":\"44\",\"max_length\":\"0\"}"},"PO_CHECKDG":"String","PO_CHECKDG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Check digit\",\"mandatory\":\"false\",\"order\":\"37\",\"max_length\":\"0\"}"},"RET_DUE_PROP":"String","RET_DUE_PROP.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Due Date for Retention (Default)\",\"mandatory\":\"false\",\"order\":\"60\",\"max_length\":\"10\"}"},"DSCT_PCT1":"Number","DSCT_PCT1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Disc.percent 1 [ DSCT_PCT1 ]\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"},"INVOICE_IND":"String","INVOICE_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"J_1BNFTYPE":"String","J_1BNFTYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Nota fiscal type\",\"mandatory\":\"false\",\"order\":\"53\",\"max_length\":\"0\"}"},"PLANNING_DATE":"String","PLANNING_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Planning Date\",\"mandatory\":\"false\",\"order\":\"48\",\"max_length\":\"10\"}"},"PSTNG_DATE":"String","PSTNG_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"10\"}"},"INV_REC_DATE":"String","INV_REC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice receipt date\",\"mandatory\":\"false\",\"order\":\"46\",\"max_length\":\"10\"}"},"DOC_TYPE":"String","DOC_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document type\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\"}"},"INV_DOC_NO":"String","INV_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice Document No.\",\"mandatory\":\"false\",\"order\":\"30\",\"max_length\":\"0\"}"},"DSCT_PCT2":"Number","DSCT_PCT2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Disc.percent 1 [ DSCT_PCT2 ]\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\"}"},"PAYEE_PAYER":"String","PAYEE_PAYER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payee\",\"mandatory\":\"false\",\"order\":\"39\",\"max_length\":\"0\"}"},"PMTMTHSUPL":"String","PMTMTHSUPL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Pmt meth. supplement\",\"mandatory\":\"false\",\"order\":\"29\",\"max_length\":\"0\"}"},"COMP_CODE":"String","COMP_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Company Code\",\"mandatory\":\"true\",\"order\":\"6\",\"max_length\":\"0\"}"},"IV_CATEGORY":"String","IV_CATEGORY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"IV category\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\"}"},"BLINE_DATE":"String","BLINE_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Baseline Payment Dte\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"10\"}"},"PMNT_BLOCK":"String","PMNT_BLOCK.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment Block\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\"}"},"INV_TRAN":"String","INV_TRAN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Transaction\",\"mandatory\":\"false\",\"order\":\"63\",\"max_length\":\"0\"}"},"ALLOC_NMBR":"String","ALLOC_NMBR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Assignment\",\"mandatory\":\"false\",\"order\":\"42\",\"max_length\":\"0\"}"},"PAYMT_REF":"String","PAYMT_REF.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment reference\",\"mandatory\":\"false\",\"order\":\"43\",\"max_length\":\"0\"}"},"CURRENCY_ISO":"String","CURRENCY_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ISO Code\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"SCBANK_IND":"String","SCBANK_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"SCB Indicator\",\"mandatory\":\"false\",\"order\":\"31\",\"max_length\":\"0\"}"},"DSCT_AMOUNT":"String","DSCT_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Discount Amount\",\"mandatory\":\"false\",\"order\":\"35\",\"max_length\":\"0\"}"},"BUSINESS_PLACE":"String","BUSINESS_PLACE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Business place\",\"mandatory\":\"false\",\"order\":\"57\",\"max_length\":\"0\"}"},"DELIV_POSTING":"String","DELIV_POSTING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Delivery posting (Inv/Cr)\",\"mandatory\":\"false\",\"order\":\"61\",\"max_length\":\"0\"}"},"LOT_NUMBER":"String","LOT_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Lot number\",\"mandatory\":\"false\",\"order\":\"51\",\"max_length\":\"0\"}"},"PO_SUB_NO":"String","PO_SUB_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"PBC/POR number\",\"mandatory\":\"false\",\"order\":\"36\",\"max_length\":\"0\"}"},"EXCH_RATE":"Number","EXCH_RATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Direct quoted exchange rate\",\"mandatory\":\"true\",\"order\":\"10\",\"max_length\":\"0\"}"},"BLLSRV_IND":"String","BLLSRV_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Service Indicator\",\"mandatory\":\"false\",\"order\":\"33\",\"max_length\":\"0\"}"},"SUPCOUNTRY":"String","SUPCOUNTRY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Supplying Cntry\",\"mandatory\":\"false\",\"order\":\"32\",\"max_length\":\"0\"}"},"HEADER_TXT":"String","HEADER_TXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Header Text\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\"}"},"REF_DOC_NO_LONG":"String","REF_DOC_NO_LONG.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference\",\"mandatory\":\"false\",\"order\":\"34\",\"max_length\":\"0\"}"},"FIXEDTERMS":"String","FIXEDTERMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Fixed\",\"mandatory\":\"false\",\"order\":\"49\",\"max_length\":\"0\"}"},"PLANNING_LEVEL":"String","PLANNING_LEVEL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Planning Level\",\"mandatory\":\"false\",\"order\":\"47\",\"max_length\":\"0\"}"},"EXCH_RATE_V":"Number","EXCH_RATE_V.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Indirect quoted exchange rate\",\"mandatory\":\"true\",\"order\":\"11\",\"max_length\":\"0\"}"},"HOUSEBANKID":"String","HOUSEBANKID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"House bank\",\"mandatory\":\"false\",\"order\":\"41\",\"max_length\":\"0\"}"},"NETTERMS":"Integer","NETTERMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days Net\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"PARTNER_BK":"String","PARTNER_BK.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Part.bank type\",\"mandatory\":\"false\",\"order\":\"40\",\"max_length\":\"0\"}"},"GROSS_AMOUNT":"String","GROSS_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Gross invoice amount\",\"mandatory\":\"true\",\"order\":\"12\",\"max_length\":\"0\"}"},"DEL_COSTS_TAXJ":"String","DEL_COSTS_TAXJ.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Jurisdiction code\",\"mandatory\":\"false\",\"order\":\"26\",\"max_length\":\"0\"}"},"EU_TRIANG_DEAL":"String","EU_TRIANG_DEAL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"EU triangular deal\",\"mandatory\":\"false\",\"order\":\"54\",\"max_length\":\"0\"}"},"DEL_COSTS_TAXC":"String","DEL_COSTS_TAXC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax code del.costs\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\"}"},"VAT_REG_NO":"String","VAT_REG_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"VAT Registration No.\",\"mandatory\":\"false\",\"order\":\"56\",\"max_length\":\"0\"}"},"DSCT_DAYS2":"Integer","DSCT_DAYS2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days 2\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"PMNTTRMS":"String","PMNTTRMS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Terms of Payment\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"PYMT_METH":"String","PYMT_METH.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Payment Method\",\"mandatory\":\"false\",\"order\":\"28\",\"max_length\":\"0\"}"},"DSCT_DAYS1":"Integer","DSCT_DAYS1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Days 1\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"CURRENCY":"String","CURRENCY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Currency\",\"mandatory\":\"true\",\"order\":\"8\",\"max_length\":\"0\"}"},"REPCOUNTRY":"String","REPCOUNTRY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reporting country\",\"mandatory\":\"false\",\"order\":\"55\",\"max_length\":\"0\"}"},"ITEM_TEXT":"String","ITEM_TEXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Text\",\"mandatory\":\"false\",\"order\":\"52\",\"max_length\":\"0\"}"},"TAX_EXCH_RATE":"Number","TAX_EXCH_RATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Rate for taxes\",\"mandatory\":\"false\",\"order\":\"58\",\"max_length\":\"0\"}"},"GOODS_AFFECTED":"String","GOODS_AFFECTED.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Investment ID\",\"mandatory\":\"false\",\"order\":\"59\",\"max_length\":\"0\"}"},"PERSON_EXT":"String","PERSON_EXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Created by\",\"mandatory\":\"false\",\"order\":\"27\",\"max_length\":\"0\"}"},"DIFF_INV":"String","DIFF_INV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoicing Party\",\"mandatory\":\"true\",\"order\":\"7\",\"max_length\":\"0\"}"},"PO_REF_NO":"String","PO_REF_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"POR reference number\",\"mandatory\":\"false\",\"order\":\"38\",\"max_length\":\"0\"}"},"REF_DOC_NO":"String","REF_DOC_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"INV_YEAR":"String","INV_YEAR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Fiscal year\",\"mandatory\":\"false\",\"order\":\"45\",\"max_length\":\"0\"}"},"SIMULATION":"String","SIMULATION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Simulate Invoice\",\"mandatory\":\"false\",\"order\":\"64\",\"max_length\":\"0\"}"},"RETURN_POSTING":"String","RETURN_POSTING.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Returns posting(in/cr)\",\"mandatory\":\"false\",\"order\":\"62\",\"max_length\":\"0\"}"},"CALC_TAX_IND":"String","CALC_TAX_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Calculate tax\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"BUS_AREA":"String","BUS_AREA.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Business Area\",\"mandatory\":\"false\",\"order\":\"50\",\"max_length\":\"0\"}"},"DEL_COSTS":"String","DEL_COSTS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Unplanned del. costs\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\"}"},"DOC_DATE":"String","DOC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Date\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"10\"}"}},"FlowDesigner:FDad8ff8648b2110101056b6e6f9e63571.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDad8ff8648b2110101056b6e6f9e63571\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Invoice Header\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"65000\",\"uiUniqueId\":\"bf2fd978-8296-41ec-bedb-fc4b5904cae0\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Invoice Header">3f3fe05e1b2384101793319acd4bcb1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0d9bba9db9ebc10fdffa82dd396198e</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>a0d9bba9db9ebc10fdffa82dd3961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <value>{"children":[],"type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63586b3a-fa5c-4abd-a5d2-045f5cdca1fe"}}</value>
+        <variable display_value="Invoice Details">bf3fe05e1b2384101793319acd4bcb40</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0d9bba9db9ebc10fdffa82dd396198e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>a8d9bba9db9ebc10fdffa82dd3961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"name$":"FD698ff864e92110100075b8120ce3d173","$COCollectionField":[{"COND_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_IT":{"$cv":{"$c":"java.lang.String","$v":""}},"QUANTITY":{"$cv":{"$c":"java.lang.String","$v":"2"}},"RETENTION_PERCENTAGE":{"$cv":{"$c":"java.lang.String","$v":""}},"RETENTION_DOCU_CURRENCY":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC":{"$cv":{"$c":"java.lang.String","$v":""}},"GRIR_CLEAR_SRV":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_ITM_ORIGIN":{"$cv":{"$c":"java.lang.String","$v":""}},"REF_DOC_YEAR":{"$cv":{"$c":"java.lang.String","$v":""}},"NO_RETENTION":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_ITEM":{"$cv":{"$c":"java.lang.String","$v":"100"}},"SHEET_ITEM":{"$cv":{"$c":"java.lang.String","$v":""}},"DE_CRE_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"VALUATION_TYPE":{"$cv":{"$c":"java.lang.String","$v":""}},"FREIGHT_VEN":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_PR_QNT":{"$cv":{"$c":"java.lang.String","$v":""}},"COND_COUNT":{"$cv":{"$c":"java.lang.String","$v":""}},"CSHDIS_IND":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_TEXT":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_UNIT_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_PR_UOM_ISO":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_UNIT":{"$cv":{"$c":"java.lang.String","$v":""}},"INVOICE_DOC_ITEM":{"$cv":{"$c":"java.lang.String","$v":"100"}},"RETENTION_DUE_DATE":{"$cv":{"$c":"java.lang.String","$v":""}},"INV_RELATION":{"$cv":{"$c":"java.lang.String","$v":""}},"COND_ST_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"FINAL_INV":{"$cv":{"$c":"java.lang.String","$v":""}},"PO_NUMBER":{"$cv":{"$c":"java.lang.String","$v":"4500001032"}},"PO_PR_UOM":{"$cv":{"$c":"java.lang.String","$v":""}},"SHEET_NO":{"$cv":{"$c":"java.lang.String","$v":""}},"TAXJURCODE":{"$cv":{"$c":"java.lang.String","$v":""}},"ITEM_AMOUNT":{"$cv":{"$c":"java.lang.String","$v":"20"}},"TAX_CODE":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD698ff864e92110100075b8120ce3d173":{"$COCollectionField":[{"item":{"COND_TYPE":"String","COND_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Condition type\",\"mandatory\":\"false\",\"order\":\"17\",\"max_length\":\"0\"}"},"REF_DOC_IT":"String","REF_DOC_IT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference Doc. Item\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"QUANTITY":"Number","QUANTITY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Quantity\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"RETENTION_PERCENTAGE":"Number","RETENTION_PERCENTAGE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Retention in Percent\",\"mandatory\":\"false\",\"order\":\"28\",\"max_length\":\"0\"}"},"RETENTION_DOCU_CURRENCY":"Number","RETENTION_DOCU_CURRENCY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Retention in Document Currency\",\"mandatory\":\"false\",\"order\":\"27\",\"max_length\":\"0\"}"},"REF_DOC":"String","REF_DOC.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference Document\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"GRIR_CLEAR_SRV":"String","GRIR_CLEAR_SRV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"GR/IR Clearing\",\"mandatory\":\"false\",\"order\":\"24\",\"max_length\":\"0\"}"},"INV_ITM_ORIGIN":"String","INV_ITM_ORIGIN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Origin of an Invoice Item\",\"mandatory\":\"false\",\"order\":\"33\",\"max_length\":\"0\"}"},"REF_DOC_YEAR":"String","REF_DOC_YEAR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Year current period\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"NO_RETENTION":"String","NO_RETENTION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item Not Relevant to Retention\",\"mandatory\":\"false\",\"order\":\"30\",\"max_length\":\"0\"}"},"PO_ITEM":"String","PO_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"SHEET_ITEM":"String","SHEET_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Line Number\",\"mandatory\":\"false\",\"order\":\"23\",\"max_length\":\"0\"}"},"DE_CRE_IND":"String","DE_CRE_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Subseq. Debit/Credit\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"VALUATION_TYPE":"String","VALUATION_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Valuation Type\",\"mandatory\":\"false\",\"order\":\"31\",\"max_length\":\"0\"}"},"FREIGHT_VEN":"String","FREIGHT_VEN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Vendor\",\"mandatory\":\"false\",\"order\":\"25\",\"max_length\":\"0\"}"},"PO_PR_QNT":"Number","PO_PR_QNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Number\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"number\",\"default_value\":\"\",\"label\":\"Qty in OPUn\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\"}"},"COND_COUNT":"String","COND_COUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Counter\",\"mandatory\":\"false\",\"order\":\"19\",\"max_length\":\"0\"}"},"CSHDIS_IND":"String","CSHDIS_IND.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"W/o Cash Dscnt\",\"mandatory\":\"false\",\"order\":\"26\",\"max_length\":\"0\"}"},"ITEM_TEXT":"String","ITEM_TEXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Text\",\"mandatory\":\"false\",\"order\":\"21\",\"max_length\":\"0\"}"},"PO_UNIT_ISO":"String","PO_UNIT_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order unit in ISO\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\"}"},"PO_PR_UOM_ISO":"String","PO_PR_UOM_ISO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Pur.Ord. PU ISO\",\"mandatory\":\"false\",\"order\":\"16\",\"max_length\":\"0\"}"},"PO_UNIT":"String","PO_UNIT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order Unit\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"INVOICE_DOC_ITEM":"String","INVOICE_DOC_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Invoice Item\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"RETENTION_DUE_DATE":"String","RETENTION_DUE_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Due Date for Retention\",\"mandatory\":\"false\",\"order\":\"29\",\"max_length\":\"10\"}"},"INV_RELATION":"String","INV_RELATION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Grouping Char. for Invoice Verification\",\"mandatory\":\"false\",\"order\":\"32\",\"max_length\":\"0\"}"},"COND_ST_NO":"String","COND_ST_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Step number\",\"mandatory\":\"false\",\"order\":\"18\",\"max_length\":\"0\"}"},"FINAL_INV":"String","FINAL_INV.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Final Invoice\",\"mandatory\":\"false\",\"order\":\"22\",\"max_length\":\"0\"}"},"PO_NUMBER":"String","PO_NUMBER.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Purchase order\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"PO_PR_UOM":"String","PO_PR_UOM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Order Price Unit\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\"}"},"SHEET_NO":"String","SHEET_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Entry Sheet\",\"mandatory\":\"false\",\"order\":\"20\",\"max_length\":\"0\"}"},"TAXJURCODE":"String","TAXJURCODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax Jurisdiction\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"ITEM_AMOUNT":"String","ITEM_AMOUNT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Amount\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"TAX_CODE":"String","TAX_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Tax Code\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Invoice Lines\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"e74a029a-f6bb-4778-8993-6ed7f865b029\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD698ff864e92110100075b8120ce3d173\",\"child_label\":\"Line\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bd219f5f-7e3e-4954-9024-f8fa2d28b3f0\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD698ff864e92110100075b8120ce3d173.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Invoice Lines\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"e74a029a-f6bb-4778-8993-6ed7f865b029\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD698ff864e92110100075b8120ce3d173\",\"child_label\":\"Line\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bd219f5f-7e3e-4954-9024-f8fa2d28b3f0\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Invoice Lines">f33fe05e1b2384101793319acd4bcb3a</variable>
+    </sys_variable_value>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT IN94d9bba9db9ebc10fdffa82dd3961948"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>po_record</element>
+        <help/>
+        <hint/>
+        <label>PO record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1cd9bba9db9ebc10fdffa82dd3961923</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:32</sys_created_on>
+        <sys_id>94d9bba9db9ebc10fdffa82dd3961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923^sys_idNOT IN18d9bba9db9ebc10fdffa82dd3961969"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sap_invoice_number</element>
+        <help/>
+        <hint/>
+        <label>SAP invoice number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1cd9bba9db9ebc10fdffa82dd3961923</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 05:55:33</sys_created_on>
+        <sys_id>18d9bba9db9ebc10fdffa82dd3961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 05:55:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>e7aab390dbdef410fdffa82dd3961934</sys_id>
+        <latest_snapshot>1cd9bba9db9ebc10fdffa82dd3961923</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

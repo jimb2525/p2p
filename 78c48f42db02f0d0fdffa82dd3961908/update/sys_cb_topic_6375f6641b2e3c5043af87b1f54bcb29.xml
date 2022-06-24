@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "003661799a9c4b3b9202d646668658b0": {
+          "id": "003661799a9c4b3b9202d646668658b0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "8effc9bb5d024c58a3b6e9a8ec02fa7d": {
+          "id": "8effc9bb5d024c58a3b6e9a8ec02fa7d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "76d35849e8eb4381a7377f608559e3d8": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "vendor",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which vendor's details would you like to update?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "eeca5d2a24404db4aadcd47d677f3bf6",
+          "id": "76d35849e8eb4381a7377f608559e3d8",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "None found"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "sys_idISNOTEMPTY"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "003d93acdfff4968ad5427cb24770159",
+          "edgeType": "Edge",
+          "source": "003661799a9c4b3b9202d646668658b0",
+          "target": "76d35849e8eb4381a7377f608559e3d8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d04386156fa74f8a93cc50052c23bb03",
+          "edgeType": "Edge",
+          "source": "76d35849e8eb4381a7377f608559e3d8",
+          "target": "8effc9bb5d024c58a3b6e9a8ec02fa7d",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "eeca5d2a24404db4aadcd47d677f3bf6": {
+      "id": "eeca5d2a24404db4aadcd47d677f3bf6",
+      "name": "vendor",
+      "label": "Vendor",
+      "varType": "reference",
+      "table": "sn_sap_ariba_spoke_import_supplier_organizations_csv",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Change vendor details</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Change vendor details</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 08:38:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6375f6641b2e3c5043af87b1f54bcb29</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Change vendor details</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_cb_topic_6375f6641b2e3c5043af87b1f54bcb29</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 23:06:18</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=6375f6641b2e3c5043af87b1f54bcb29"/>
+</record_update>

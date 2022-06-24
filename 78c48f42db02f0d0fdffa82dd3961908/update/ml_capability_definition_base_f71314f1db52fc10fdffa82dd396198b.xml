@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_base">
+    <ml_capability_definition_base action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="NLU">b4ddf73453c73300d1dcddeeff7b1288</capability>
+        <current_solution_version>2</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <fields/>
+        <filter/>
+        <request_source>api</request_source>
+        <solution_label>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</solution_label>
+        <solution_name>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"authoringModel":{"intents":[{"name":"Change vendor details","samples":[{"utterance":"update vendor"},{"utterance":"change vendor details"},{"utterance":"vendor details"}],"entities":[]},{"name":"Raise a PR","samples":[{"utterance":"How do I request for a purchase"},{"utterance":"Raise a purchase request"},{"utterance":"I need to buy something"},{"utterance":"I need to purchase an item"},{"utterance":"Raise PR"}],"entities":[]}],"schemaVersion":"NY-1","vocabulary":[],"modelPurpose":"virtual_agent","entities":[],"confidenceThreshold":"0.6","lookupSources":[],"name":"ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960","language":"en","version":"3.1.2-HYB"},"label":"ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960","name":"ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960","nluTrainingMode":"IntentClassifier","trainingMode":"sync"}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 07:46:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f71314f1db52fc10fdffa82dd396198b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ml_x_snc_x_snc_sap_a_p_au_0_global_b313d0f1db52fc10fdffa82dd3961960</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>ml_capability_definition_base_f71314f1db52fc10fdffa82dd396198b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 08:38:05</sys_updated_on>
+        <table/>
+        <training_frequency>run_once</training_frequency>
+        <word_vector_corpus/>
+    </ml_capability_definition_base>
+</record_update>

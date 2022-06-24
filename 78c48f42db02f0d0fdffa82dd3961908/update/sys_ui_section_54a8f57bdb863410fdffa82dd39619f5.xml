@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="54a8f57bdb863410fdffa82dd39619f5" sys_domain="global" table="x_snc_sap_a_p_au_0_purchase_order" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>721b3f081bfe051061cdba23164bcb1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>1</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>3a1b3f081bfe051061cdba23164bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>2</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>be1b3f081bfe051061cdba23164bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purchase_request</element>
+            <position>3</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>361b3f081bfe051061cdba23164bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>item_name</element>
+            <position>4</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>ba1b3f081bfe051061cdba23164bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quantity</element>
+            <position>5</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>321b3f081bfe051061cdba23164bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>unit_price</element>
+            <position>6</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>b61b3f081bfe051061cdba23164bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_amount</element>
+            <position>7</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>3e1b3f081bfe051061cdba23164bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company_code</element>
+            <position>8</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>b21b3f081bfe051061cdba23164bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>9</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>3a1b3f081bfe051061cdba23164bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor_contract</element>
+            <position>10</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>be1b3f081bfe051061cdba23164bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>11</position>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2022-04-07 06:52:50</sys_created_on>
+            <sys_id>361b3f081bfe051061cdba23164bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_sap_a_p_au_0_purchase_order" sys_domain="global" view="Default view">54a8f57bdb863410fdffa82dd39619f5</sys_ui_section>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2022-04-07 06:52:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_sap_a_p_au_0_purchase_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-08-25 10:01:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54a8f57bdb863410fdffa82dd39619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_sap_a_p_au_0_purchase_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+            <sys_update_name>sys_ui_section_54a8f57bdb863410fdffa82dd39619f5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-08-25 10:01:45</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

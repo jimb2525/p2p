@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Change vendor details">130c75341b2e7c5043af87b1f54bcbee</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"4c6d8a769ba34c1e9181798a7e1082bf","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"4c6d8a769ba34c1e9181798a7e1082bf"}],"goals":[{"name":"primary","trigger_id":"4c6d8a769ba34c1e9181798a7e1082bf","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"003661799a9c4b3b9202d646668658b0","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"8effc9bb5d024c58a3b6e9a8ec02fa7d","name":"End"},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"76d35849e8eb4381a7377f608559e3d8","name":"vendor","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"eeca5d2a24404db4aadcd47d677f3bf6","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which vendor's details would you like to update?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"None found\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"sys_idISNOTEMPTY"}}],"edges":[{"type":"Edge","source_node_id":"003661799a9c4b3b9202d646668658b0","target_node_id":"76d35849e8eb4381a7377f608559e3d8","id":"003d93acdfff4968ad5427cb24770159"},{"type":"Edge","source_node_id":"76d35849e8eb4381a7377f608559e3d8","target_node_id":"8effc9bb5d024c58a3b6e9a8ec02fa7d","id":"d04386156fa74f8a93cc50052c23bb03"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false},{"type":"Reference","table":"sn_sap_ariba_spoke_import_supplier_organizations_csv","reference_qualifier_condition":"sys_idISNOTEMPTY","id":"eeca5d2a24404db4aadcd47d677f3bf6","name":"vendor","formatType":"text","secure":false,"sensitive":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"78c48f42db02f0d0fdffa82dd3961908","domain":"global","topic_type":"STANDARD","channels":[],"id":"6375f6641b2e3c5043af87b1f54bcb29","name":"Change vendor details","key_phrases":["Change vendor details"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"design_categories":[],"triggerable_by_notification":false,"auto_resolution_enabled":false,"library":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>6375f6641b2e3c5043af87b1f54bcb29</design_topic_id>
+        <name>Change vendor details</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 23:06:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>130cb5341b2e7c5043af87b1f54bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+        <sys_update_name>sys_cb_design_topic_130cb5341b2e7c5043af87b1f54bcb01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 23:06:20</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

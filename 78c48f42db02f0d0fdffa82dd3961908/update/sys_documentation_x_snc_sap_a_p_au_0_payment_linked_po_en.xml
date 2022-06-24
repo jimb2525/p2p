@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="linked_po" label="Linked PO" language="en" table="x_snc_sap_a_p_au_0_payment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>linked_po</element>
+            <help/>
+            <hint/>
+            <label>Linked PO</label>
+            <language>en</language>
+            <name>x_snc_sap_a_p_au_0_payment</name>
+            <plural>Linked POs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-08-26 13:14:25</sys_created_on>
+            <sys_id>a85e638cdbd6b410fdffa82dd39619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Linked PO</sys_name>
+            <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_sap_a_p_au_0_payment_linked_po_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-08-26 13:14:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

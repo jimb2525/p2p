@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_utf_8" label="UTF-8" language="en" table="x_snc_sap_a_p_au_0_ariba_po">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_utf_8</element>
+            <help/>
+            <hint/>
+            <label>UTF-8</label>
+            <language>en</language>
+            <name>x_snc_sap_a_p_au_0_ariba_po</name>
+            <plural>UTF-8s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-01 00:52:54</sys_created_on>
+            <sys_id>75e54c5c1bc60d1061cdba23164bcb99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>UTF-8</sys_name>
+            <sys_package display_value="SAP P2P Automation" source="x_snc_sap_a_p_au_0">78c48f42db02f0d0fdffa82dd3961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP P2P Automation">78c48f42db02f0d0fdffa82dd3961908</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_sap_a_p_au_0_ariba_po_u_utf_8_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-01 00:52:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
